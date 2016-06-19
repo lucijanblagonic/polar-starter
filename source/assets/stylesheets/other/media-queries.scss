@@ -1,0 +1,75 @@
+/* =Media queries
+===================================================== */
+
+// Media queries & breakpoints
+@mixin breakpoint($point) {
+
+  // Does browser support media queries
+  $media-query-support: true !global !default;
+
+  // Style changes at:
+  $extra-small-value: 24em; // 384px
+  $small-value:       36em; // 576px
+  $medium-value:      48em; // 768px
+  $large-value:       62em; // 992px
+  $extra-large-value: 80em; // 1280px
+
+  // Mobile first (min-width)
+  @if ($media-query-support) {
+
+    $extra-small: "(min-width: "$extra-small-value")";
+    $small:       "(min-width: "$small-value")";
+    $medium:      "(min-width: "$medium-value")";
+    $large:       "(min-width: "$large-value")";
+    $extra-large: "(min-width: "$extra-large-value")";
+
+    @if $point == extra-large {
+      @media #{$exta-large}           { @content; }
+    }
+    @else if $point == large {
+      @media #{$large}                { @content; }
+    }
+    @else if $point == medium {
+      @media #{$medium}               { @content; }
+    }
+    @else if $point == small {
+      @media #{$small}                { @content; }
+    }
+    @else if $point == extra-small {
+      @media #{$extra-small}          { @content; }
+    }
+
+  }
+
+  // Desktop down (max-width)
+  @if ($media-query-support) {
+
+    $to-extra-small: "(max-width: "($extra-small-value) - .0625em")"; // -1px
+    $to-small:       "(max-width: "($small-value) - .0625em")";  // -1px
+    $to-medium:      "(max-width: "($medium-value) - .0625em")";  // -1px
+    $to-large:       "(max-width: "($large-value) - .0625em")";  // -1px
+    $to-extra-large: "(max-width: "($extra-large-value) - .0625em")"; // -1px
+
+    @if $point == to-extra-large {
+      @media #{$to-extra-large}      { @content; }
+    }
+    @else if $point == to-large {
+      @media #{$to-large}            { @content; }
+    }
+    @else if $point == to-medium {
+      @media #{$to-medium}           { @content; }
+    }
+    @else if $point == to-small {
+      @media #{$to-small}            { @content; }
+    }
+    @else if $point == to-extra-small {
+      @media #{$to-extra-small}      { @content; }
+    }
+
+  }
+
+  @else {
+    @content;
+  }
+
+}

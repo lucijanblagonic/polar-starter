@@ -1,0 +1,35 @@
+/* =Icons
+===================================================== */
+
+// Icons
+//
+// Icons used on the project.
+//
+// Style guide: styles.icons
+
+@font-face {
+  font-family: 'streamline';
+  src:    url('#{$icomoon-font-path}/streamline.eot?5psgfh');
+  src:    url('#{$icomoon-font-path}/streamline.eot?5psgfh#iefix') format('embedded-opentype'),
+      url('#{$icomoon-font-path}/streamline.woff2?5psgfh') format('woff2'),
+      url('#{$icomoon-font-path}/streamline.ttf?5psgfh') format('truetype'),
+      url('#{$icomoon-font-path}/streamline.woff?5psgfh') format('woff'),
+      url('#{$icomoon-font-path}/streamline.svg?5psgfh#streamline') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'streamline' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

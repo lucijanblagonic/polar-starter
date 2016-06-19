@@ -1,0 +1,59 @@
+/*
+ * Information
+ *
+ * Design: Designer, Web
+ * HTML/CSS: Front–end developer, Web
+ *
+ * Standards for developing flexible, durable, and sustainable HTML and CSS.
+ * http://codeguide.co/
+ *
+ * Frontend development methodology based on BEM
+ * https://en.bem.info/
+ *
+ */
+
+/* =Include
+===================================================== */
+
+/* Vendor dependencies */
+@import "bourbon/bourbon";             // Bourbon [http://bourbon.io/docs/]
+
+/* Authored dependencies */
+@import 'other/normalize';             // Normalize
+@import 'other/addons';                // Additional mixins
+@import 'other/media-queries';         // Media queries
+
+// Styles
+//
+// Global styles.
+//
+// Style guide: styles
+
+@import 'partials/base';               // Project variables
+@import 'partials/layout';             // Layout
+
+// Elements
+//
+// Elements examples.
+//
+// Style guide: elements
+
+@import 'partials/typography';         // Typography
+@import 'partials/buttons';            // Buttons
+@import 'partials/forms';              // Forms
+
+// Patterns
+//
+// Building blocks of the website.
+//
+// Style guide: patterns
+
+@import 'partials/messages';           // Messages
+@import 'partials/nav-tabs';           // Nav: Tabs
+@import 'partials/nav-page';           // Nav: Page
+
+/* Helpers */
+@import 'partials/helpers';            // Helpers
+
+/* Experimental */
+@import 'partials/experimental';       // Experimental

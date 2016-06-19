@@ -1,0 +1,151 @@
+/* =Project specific
+===================================================== */
+
+/* =Local
+===================================================== */
+
+$local-blue:                      blue;
+$local-red:                       red;
+
+/* =Brand
+===================================================== */
+
+$color-brand-primary:             #111111;
+$color-brand-secondary:           #111111;
+$color-brand-tertiary:            #111111;
+
+/* =Colors
+===================================================== */
+
+/* Visuals */
+$color-page-background:           #f3f3f3;
+
+/* Typography colors */
+$color-text:                      #555;
+$color-text-heading-1:            #222;
+$color-text-heading-2:            #222;
+$color-text-heading-3:            #222;
+$color-text-heading-4:            #222;
+$color-text-paragraph:            #444;
+$color-text-weak:                 #999;
+$color-text-strong:               #222;
+$color-text-invert:               rgba(255,255,255,.7);
+$color-text-weak-invert:          rgba(255,255,255,.5);
+$color-text-strong-invert:        rgba(255,255,255,1);
+$color-text-link:                 $color-brand-primary;
+$color-text-link-hover:           darken($color-brand-primary, 20%);
+$color-text-link-visited:         lighten($color-brand-primary, 20%);
+
+/* 10 shades of grey ;) */
+$color-grey-01:                   rgba(0,0,0,.1); // Light
+$color-grey-02:                   rgba(0,0,0,.2);
+$color-grey-03:                   rgba(0,0,0,.3);
+$color-grey-04:                   rgba(0,0,0,.4);
+$color-grey-05:                   rgba(0,0,0,.5);
+$color-grey-06:                   rgba(0,0,0,.6);
+$color-grey-07:                   rgba(0,0,0,.7);
+$color-grey-08:                   rgba(0,0,0,.8);
+$color-grey-09:                   rgba(0,0,0,.9);
+$color-grey-10:                   rgba(0,0,0,1);  // Dark
+
+/* Messages */
+$color-message-default:           #eeeeee;
+$color-message-success:           #00a664;
+$color-message-warning:           #ffcb05;
+$color-message-danger:            #f04e3e;
+
+/* Forms */
+$color-input-regular:             #ddd;
+$color-input-focus:               #aaa;
+$color-input-success:             #00a664;
+$color-input-error:               #f04e3e;
+$color-input-required:            #ba131a;
+$color-input-checkbox:            #ddd;
+$color-input-checkbox-active:     $color-brand-primary;
+$color-input-radio:               #ddd;
+$color-input-radio-active:        $color-brand-primary;
+
+/* Buttons */
+$color-button-regular:            #111111;
+$color-button-regular-hover:      darken($color-button-regular, 10%);
+$color-button-primary:            #111111;
+$color-button-primary-hover:      darken($color-button-primary, 10%);
+$color-button-secondary:          #111111;
+$color-button-secondary-hover:    darken($color-button-secondary, 10%);
+$color-button-invert:             #111111;
+$color-button-invert-hover:       darken($color-button-secondary, 10%);
+$color-button-inactive:           #eeeeee;
+
+/* Specific colors */
+$color-explicit-red:              #ed1c24;
+$color-explicit-green:            #00a651;
+$color-explicit-blue:             #034ea2;
+
+/* =Typography
+===================================================== */
+
+/* Fonts */
+$font-brand-primary:              $helvetica;
+$font-brand-secondary:            $georgia;
+
+/* Font weights */
+$hairline:                        100;
+$thin:                            200;
+$light:                           300;
+$regular:                         400;
+$medium:                          500;
+$semibold:                        600;
+$bold:                            700;
+$black:                           900;
+
+/* =Z-index
+===================================================== */
+
+$z-index-header:                  200;
+$z-index-navigation:              300;
+$z-index-main:                    100;
+$z-index-footer:                  100;
+$z-index-modal:                   500;
+$z-index-skip-links:              600;
+
+/* =Other
+===================================================== */
+
+/* Units */
+$unit-xs: rem(8);
+$unit-s:  rem(16);
+$unit-m:  rem(24);
+$unit-l:  rem(32);
+$unit-xl: rem(48);
+
+/* Container padding */
+$container-unit-small:          $unit-s;
+$container-unit-medium:         $unit-m;
+$container-unit-large:          $unit-l;
+
+/* Container max width */
+$container-max-width:           rem(1040);
+
+/* Border radius */
+$border-radius-small:           rem(3);
+$border-radius-normal:          rem(6);
+$border-radius-large:           rem(10);
+
+/* Box shadow */
+$box-shadow-small:              0 rem(1) rem(3) 0 rgba(0,0,0,.2);
+$box-shadow-medium:             0 rem(1) rem(6) 0 rgba(0,0,0,.2);
+$box-shadow-large:              0 rem(1) rem(24) 0 rgba(0,0,0,.2);
+
+/* Site logo */
+// $site-logo-width-small: rem(100);
+// $site-logo-height-small: rem(32);
+// $site-logo-width: rem(204);
+// $site-logo-height: rem(40);
+$site-logo-symbol-width: rem(40);
+
+/* =Icons
+===================================================== */
+
+$icomoon-font-path: "../../fonts" !default;
+
+$stream-zoom-in: "\e922";

@@ -1,0 +1,174 @@
+/* =Experimental
+===================================================== */
+
+// Docs
+
+.docs-header {}
+.docs-main {}
+.docs-navigation {}
+
+.docs-card {}
+.docs-card__title {}
+.docs-card__description {}
+.docs-card__content {}
+.docs-card__code {}
+
+.docs-nav {}
+.docs-nav__item {}
+.docs-nav__link {}
+
+.docs-color {}
+
+/* Nav: Header */
+
+.nav-header {}
+.nav-header__item {}
+.nav-header__item--active {}
+.nav-header__item--parent {}
+.nav-header__link {}
+.nav-header__dropdown {}
+
+// Accordion
+
+.accordion {}
+.accordion__title {}
+.accordion__content {}
+
+// Testimonial
+
+.testimonial {}
+.testimonial__content {}
+.testimonial__author {}
+
+// Modal
+
+.modal {}
+.modal__title {}
+.modal__content {}
+
+// Module
+
+.module {}
+.module__title {}
+.module__content {}
+
+// Block
+
+.block {}
+.block__title {}
+.block__content {}
+
+.block__container {
+
+  /* Positioning */
+  position: relative;
+
+  /* Box-model */
+  max-width: $container-max-width();
+  margin: 0 auto;
+  @include breakpoint-proportion(padding);
+
+  /* Misc */
+  @include clearfix();
+
+}
+
+// Branding
+
+.branding {}
+.branding__logo {}
+.branding__tagline {}
+
+// Site logo
+
+.site-logo {}
+.site-logo__link {}
+.site-logo__image {}
+
+// Examples
+
+.product-listing {}
+.product-listing__title {}
+.product-listing__image {}
+.product-listing__summary {}
+.product-listing__action {}
+
+// Post: Listing
+
+.post-listing {}
+.post-listing__title {}
+.post-listing__link {}
+.post-listing__meta {}
+.post-listing__summary {}
+.post-listing__more {}
+
+// Post: Full
+
+.post-full {}
+.post-full__title {}
+.post-full__meta {}
+.post-full__summary {}
+.post-full__content {}
+
+// Gallery
+
+.gallery {}
+
+.gallery-item {}
+.gallery-item__link {}
+.gallery-item__image {}
+
+// Colors
+//
+// Color scheme.
+//
+// Style guide: styles.colors
+
+/*
+ * Container
+ *
+ * Basic container code
+ */
+
+.container {}
+
+/*
+ * Section
+ *
+ * Global section
+ */
+
+.section {}
+
+/*
+ * Section Header
+ *
+ * Header section of the site
+ */
+
+.section--header {
+
+  position: relative;
+  z-index: $z-index-header;
+
+}
+
+/*
+ * Section Main
+ *
+ * Main section of the site
+ */
+
+.section--main {
+
+}
+
+/*
+ * Section Footer
+ *
+ * Footer section of the site
+ */
+
+.section--footer {
+
+}

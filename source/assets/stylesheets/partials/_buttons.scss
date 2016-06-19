@@ -1,0 +1,71 @@
+/* =Buttons
+===================================================== */
+
+// Buttons
+//
+// Button variations and usage examples.
+//
+// :hover - test
+//
+// Markup:
+// <a class="button {{modifier_class}}" href="#">
+//   <span class="button__label">Link Button</span>
+// </a>
+// <button class="{{modifier_class}}">
+//   <span class="button__label">Form Button</label>
+// </button>
+// <input class="button {{modifier_class}}"  value="Form Button" type="submit"/>
+//
+// Style guide: elements.buttons
+
+.button,
+button {
+
+  /* Positioning */
+  position: relative;
+
+  /* Box-model */
+  display: inline-block;
+  padding: rem(7) rem(16);
+  border: 1px solid $color-button-regular;
+
+  /* Typography */
+  @include font-size(16);
+  line-height: em(24,16);
+  text-align: center;
+  color: #fff;
+  font-weight: $bold;
+
+  /* Visual */
+  background-color: $color-button-regular;
+  border-radius: $border-radius-small;
+  border-color: transparent;
+
+  /* Misc */
+  @include background-image(linear-gradient(to top, rgba(0,0,0,.1), rgba(0,0,0,0)));
+  @include transition-fast();
+
+  &:hover,
+  &:focus,
+  &:active {
+
+    color: #fff;
+    background-color: $color-button-regular-hover;
+
+    background: red;
+
+  }
+
+  &.small {
+
+    padding: 2px;
+
+  }
+
+}
+
+// Button
+
+.button {}
+.button__label {}
+.button__icon {}

@@ -1,0 +1,24 @@
+{
+  "name": "polar-starter",
+  "version": "1.0.0",
+  "description": "Simple project starter",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-file-include": "^0.13.7"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.13.0",
+    "gulp-shell": "^0.5.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "kss": "^2.4.0",
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lucijanblagonic/polar-startpoint.git"
+  },
+  "author": "Lucijan Blagonic",
+  "license": "MIT"
+}

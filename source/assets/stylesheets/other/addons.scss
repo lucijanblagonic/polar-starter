@@ -1,0 +1,159 @@
+/* =Custom mixins
+===================================================== */
+
+// Clearfix (IE8+)
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: '';
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+  *zoom: 1;
+}
+
+// Read by screen readers
+// http://webaim.org/techniques/css/invisiblecontent/
+// Hidden
+@mixin visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+// Visible
+@mixin visually-visible {
+  position: relative;
+  left: auto;
+  width: auto;
+  height: auto;
+  overflow: visible;
+}
+
+// Hide text
+@mixin hide-text {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+// Show text
+@mixin show-text {
+  text-indent: 0;
+  white-space: normal;
+  overflow: visible;
+}
+
+// Word wrap
+@mixin word-wrap() {
+  word-break:     break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens:    auto;
+  hyphens:         auto;
+}
+
+// Ellipsis
+@mixin ellipsis() {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+// Rem to px conversion
+@mixin font-size($sizeValue: 16) {
+  font-size: $sizeValue + px;
+  font-size: ($sizeValue / 16) + rem;
+}
+
+// Icon font
+@mixin icon-font($fontName) {
+  font-family: $fontName;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// List reset
+@mixin list-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+// Transition: None
+@mixin transition-none {
+  -webkit-transition: none;
+  transition: none;
+}
+
+// Transition: Fast
+@mixin transition-fast {
+  @include transition-property(all);
+  @include transition-duration(.1s);
+  @include transition-timing-function(ease-in);
+}
+
+// Transition: Normal
+@mixin transition-normal {
+  @include transition-property(all);
+  @include transition-duration(.3s);
+  @include transition-timing-function(ease-in);
+}
+
+// Transition: Slow
+@mixin transition-slow {
+  @include transition-property(all);
+  @include transition-duration(.6s);
+  @include transition-timing-function(ease-in);
+}
+
+// Proportion
+@mixin breakpoint-proportion($property-name, $negative-value: 'none') {
+
+  @if $negative-value == 'negative' {
+
+    #{$property-name}: -($container-unit-small);
+
+    @include breakpoint(small) {
+
+      #{$property-name}: -($container-unit-medium);
+
+    }
+
+    @include breakpoint(medium) {
+
+      #{$property-name}: -($container-unit-large);
+
+    }
+
+  } @else {
+
+    #{$property-name}: $container-unit-small;
+
+    @include breakpoint(small) {
+
+      #{$property-name}: $container-unit-medium;
+
+    }
+
+    @include breakpoint(medium) {
+
+      #{$property-name}: $container-unit-large;
+
+    }
+
+  }
+
+}

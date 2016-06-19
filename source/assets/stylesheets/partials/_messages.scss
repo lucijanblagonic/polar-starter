@@ -1,0 +1,51 @@
+/* =Messages
+===================================================== */
+
+// Messages
+//
+// Different types of messages used on the site
+//
+// .message--warning - Warning
+// .message--danger - Danger
+// .message--success - Success
+//
+// Markup:
+// <div class="message {{modifier_class}}">
+//   <p>Lorem ipsum dolor sit amet.</p>
+// </div>
+//
+// Style guide: patterns.message
+
+.message {
+
+  padding: $unit-s;
+  background-color: $color-message-default;
+  border-radius: $border-radius-small;
+
+  p {
+
+    margin-bottom: $unit-s;
+    margin-bottom: 0;
+
+  }
+
+}
+
+.message--success {
+
+  background-color: $color-message-success;
+
+}
+
+.message--warning {
+
+  background-color: $color-message-warning;
+
+}
+
+.message--danger {
+
+  background-color: $color-message-danger;
+
+}
+
