@@ -10,7 +10,7 @@ $local-red:                       red;
 /* =Brand
 ===================================================== */
 
-$color-brand-primary:             #111111;
+$color-brand-primary:             #0065bc;
 $color-brand-secondary:           #111111;
 $color-brand-tertiary:            #111111;
 
@@ -66,14 +66,14 @@ $color-input-radio:               #ddd;
 $color-input-radio-active:        $color-brand-primary;
 
 /* Buttons */
-$color-button-regular:            #111111;
-$color-button-regular-hover:      darken($color-button-regular, 10%);
-$color-button-primary:            #111111;
+$color-button-regular:            #768592;
+$color-button-regular-hover:      darken($color-button-regular, 20%);
+$color-button-primary:            #0065bc;
 $color-button-primary-hover:      darken($color-button-primary, 10%);
-$color-button-secondary:          #111111;
-$color-button-secondary-hover:    darken($color-button-secondary, 10%);
-$color-button-invert:             #111111;
-$color-button-invert-hover:       darken($color-button-secondary, 10%);
+$color-button-secondary:          #ffda00;
+$color-button-secondary-hover:    darken($color-button-secondary, 5%);
+$color-button-invert:             mix($color-button-primary, #fff, 10%);
+$color-button-invert-hover:       darken($color-button-invert, 10%);
 $color-button-inactive:           #eeeeee;
 
 /* Specific colors */

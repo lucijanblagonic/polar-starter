@@ -5,7 +5,18 @@
 //
 // Button variations and usage examples.
 //
-// :hover - test
+// :hover - Hover state
+// :focus - Focus state
+// .button--primary   - Primary button example
+// .button--primary:hover   - Primary button example
+// .button--primary:focus   - Primary button example
+// .button--secondary - Secondary button example
+// .button--secondary:hover - Secondary button example
+// .button--secondary:focus - Secondary button example
+// .button--invert    - Invert button example
+// .button--invert:hover    - Invert button example
+// .button--invert:focus    - Invert button example
+// .button--inactive  - Inactive button example
 //
 // Markup:
 // <a class="button {{modifier_class}}" href="#">
@@ -42,7 +53,6 @@ button {
   border-color: transparent;
 
   /* Misc */
-  @include background-image(linear-gradient(to top, rgba(0,0,0,.1), rgba(0,0,0,0)));
   @include transition-fast();
 
   &:hover,
@@ -52,20 +62,75 @@ button {
     color: #fff;
     background-color: $color-button-regular-hover;
 
-    background: red;
+  }
+
+}
+
+.button--primary {
+
+  color: $color-text-invert;
+  background-color: $color-button-primary;
+
+  &:hover,
+  &:focus,
+  &:active {
+
+    color: $color-text-strong-invert;
+    background-color: $color-button-primary-hover;
 
   }
 
-  &.small {
+}
 
-    padding: 2px;
+.button--secondary {
+
+  color: $color-text-strong;
+  background-color: $color-button-secondary;
+
+  &:hover,
+  &:focus,
+  &:active {
+
+    color: rgba(0,0,0,.9);
+    background-color: $color-button-secondary-hover;
+
+  }
+
+}
+
+.button--invert {
+
+  color: $color-button-primary;
+  background-color: $color-button-invert;
+
+  &:hover,
+  &:focus,
+  &:active {
+
+    color: $color-button-primary-hover;
+    background-color: $color-button-invert-hover;
+
+  }
+
+}
+
+.button--inactive {
+
+  color: rgba(0,0,0,.3);
+  background-color: $color-button-inactive;
+
+  &:hover,
+  &:focus,
+  &:active {
+
+    color: rgba(0,0,0,.3);
+    background-color: $color-button-inactive;
 
   }
 
 }
 
 // Button
-
 .button {}
 .button__label {}
 .button__icon {}
