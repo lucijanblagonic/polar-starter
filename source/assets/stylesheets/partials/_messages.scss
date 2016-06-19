@@ -18,7 +18,7 @@
 
 .message {
 
-  padding: $unit-s;
+  padding: $unit-xs $unit-s;
   background-color: $color-message-default;
   border-radius: $border-radius-small;
 
@@ -35,17 +35,35 @@
 
   background-color: $color-message-success;
 
+  p {
+
+    color: $color-text-strong-invert;
+
+  }
+
 }
 
 .message--warning {
 
   background-color: $color-message-warning;
 
+  p {
+
+    color: $color-text-strong-invert;
+
+  }
+
 }
 
 .message--danger {
 
   background-color: $color-message-danger;
+
+  p {
+
+    color: $color-text-strong-invert;
+
+  }
 
 }
 
