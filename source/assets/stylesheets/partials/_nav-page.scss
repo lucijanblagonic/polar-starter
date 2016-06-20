@@ -9,10 +9,157 @@
 //
 // Style guide: patterns.nav-page
 
-.nav-page {}
-.nav-page__summary {}
-.nav-page__item {}
-.nav-page__item--first {}
-.nav-page__item--last {}
-.nav-page__item--current {}
-.nav-page__link {}
+.nav-page {
+
+  position: relative;
+  text-align: center;
+
+}
+
+.nav-page__summary {
+
+  margin-bottom: $unit-xs;
+  color: $color-text-weak;
+
+  @include breakpoint(to-small) {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 50%;
+
+  }
+
+}
+
+.nav-page__list {
+
+  @include list-reset();
+  @include clearfix();
+
+}
+
+.nav-page__item {
+
+  display: inline-block;
+  margin: 0;
+
+  @include font-size(16);
+  line-height: 1.5;
+
+  @include breakpoint(to-small) {
+
+    display: none;
+
+  }
+
+}
+
+.nav-page__item--prev,
+.nav-page__item--next {
+
+  position: relative;
+  font-weight: $bold;
+
+  @include breakpoint(to-small) {
+
+    .nav-page__link {
+
+      padding: $unit-xs 0;
+      background-color: transparent;
+      border-color: transparent;
+
+      &:hover,
+      &:focus,
+      &:active {
+
+        color: $color-text-link-hover;
+        background-color: transparent;
+
+      }
+
+    }
+
+  }
+
+}
+
+.nav-page__item--prev {
+
+  @include breakpoint(to-small) {
+
+    display: block;
+    float: left;
+
+  }
+
+  .nav-page__link:before {
+
+    content: "←";
+
+  }
+
+}
+
+.nav-page__item--next {
+
+  @include breakpoint(to-small) {
+
+    float: right;
+    display: block;
+
+  }
+
+  .nav-page__link:after {
+
+    content: "→";
+
+  }
+
+}
+
+.nav-page__item--active {
+
+  .nav-page__link {
+
+    border-color: mix($color-text-link, #fff, 10%);
+    background-color: transparent;
+    color: $color-text-strong;
+    cursor: auto;
+
+    &:hover,
+    &:focus,
+    &:active {
+
+      border-color: mix($color-text-link, #fff, 10%);
+      background-color: transparent;
+      color: $color-text-strong;
+
+    }
+
+  }
+
+}
+
+.nav-page__link {
+
+  display: block;
+  padding: $unit-xs $unit-s;
+  border: 1px solid transparent;
+
+  color: $color-text-link;
+  text-decoration: none;
+  background-color: mix($color-text-link, #fff, 10%);
+  border-radius: $border-radius-small;
+
+  &:hover,
+  &:focus,
+  &:active {
+
+    color: $color-text-strong-invert;
+    background-color: $color-text-link;
+
+  }
+
+}
