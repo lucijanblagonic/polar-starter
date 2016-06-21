@@ -1,4 +1,5 @@
 {
+
   "//": "The source and destination paths are relative to this file.",
   "source": ".",
 
@@ -11,6 +12,8 @@
   ],
 
   "title": "KSS Style Guide",
+  "template": "styleguide-template/",
   "homepage": "styleguide.md",
   "verbose": true
+
 }

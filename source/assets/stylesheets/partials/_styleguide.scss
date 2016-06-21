@@ -1,0 +1,294 @@
+/* KSS */
+
+.kss-doc-title {
+
+  margin-bottom: rem(24);
+
+  @include font-size(16);
+  line-height: 1.5;
+  font-weight: $bold;
+
+}
+
+/* KSS sidebar */
+.kss-sidebar {
+
+  @include breakpoint-proportion(padding);
+
+  background-color: #eee;
+
+  @include breakpoint(medium) {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    // width: 30%;
+    width: rem(300);
+    min-height: 100vh;
+    overflow-y: scroll;
+
+  }
+
+}
+
+/* KSS main */
+.kss-main {
+
+  @include breakpoint(medium) {
+
+    // float: right;
+    // width: 100%;
+    margin-left: rem(300);
+    // width: 70%;
+
+  }
+
+}
+
+/* KSS section */
+.kss-section {
+
+  @include breakpoint-proportion(padding);
+
+  border-bottom: 1px solid rgba(0,0,0,.1);
+
+  &:last-child {
+
+    border-bottom: 0;
+
+  }
+
+  > .kss-style,
+  > .kss-modifier__wrapper,
+  > .kss-markup {
+
+    max-width: rem(1000);
+    margin: 0 auto;
+
+  }
+
+  /* Title */
+  .kss-title {
+
+    margin-bottom: rem(24);
+
+    @include font-size(16);
+    line-height: 1.5;
+    font-weight: $bold;
+
+    @include breakpoint(small) {
+
+      @include font-size(20);
+      line-height: 1.5;
+
+    }
+
+  }
+
+  .kss-title__permalink {}
+
+  .kss-title__ref {
+
+    font-weight: $regular;
+    color: $color-text-weak;
+
+  }
+
+  .kss-title__permalink-hash {
+
+    display: none;
+
+  }
+
+  /* Modifier */
+
+  .kss-modifier__heading {
+
+    margin-bottom: rem(16);
+
+    @include font-size(16);
+    line-height: 1.5;
+    font-weight: $regular;
+    // color: $color-text-strong;
+    color: rgba(0,0,0,.8);
+    // text-transform: uppercase;
+
+    border-left: 4px solid #fce053;
+    border-radius: $border-radius-small;
+    padding: rem(8) rem(24);
+    background-color: tint(#fce053, 80%);
+
+  }
+
+  .kss-modifier__wrapper {
+
+    @include breakpoint-proportion(padding-top);
+    @include breakpoint-proportion(padding-bottom);
+
+  }
+
+  .kss-modifier__example {
+
+    // margin-top: rem(8);
+    margin-top: rem(24);
+    margin-bottom: rem(24);
+
+    &:last-child {
+
+      margin-bottom: 0;
+
+    }
+
+  }
+
+  .kss-modifier__default-name,
+  .kss-modifier__name {
+
+    display: inline-block;
+    margin-right: rem(10);
+
+    @include font-size(14);
+    line-height: 1.5;
+    font-weight: $bold;
+    color: $color-text;
+
+  }
+
+  .kss-modifier__description {
+
+    display: inline-block;
+
+    @include font-size(14);
+    line-height: 1.5;
+    color: $color-text-weak;
+
+  }
+
+  /* Markup */
+
+  .kss-markup {
+
+    padding: rem(24);
+    border-radius: $border-radius-small;
+    // box-shadow: inset rem(4) 0 0 #fce053;
+    border-left: 4px solid #fce053;
+    background-color: tint(#fce053, 95%);
+
+  }
+
+  pre[class*="language-"] {
+
+    margin: 0;
+    padding: 0;
+
+    @include font-size(14);
+    line-height: 1.4;
+
+    background-color: transparent;
+
+    tab-size: 2;
+    -moz-tab-size: 2;
+    -o-tab-size: 2;
+    -webkit-tab-size: 2;
+
+  }
+
+}
+
+/* KSS style */
+.kss-style {
+
+  p {
+
+      margin-top: 0;
+      margin-bottom: rem(24);
+
+      &:last-child {
+
+        margin-bottom: 0;
+
+      }
+
+  }
+
+  p,
+  li {
+
+    @include font-size(16);
+    line-height: 1.5;
+    color: rgba(0,0,0,.5);
+
+    @include breakpoint(small) {
+
+      @include font-size(18);
+      line-height: 1.6;
+
+    }
+
+  }
+
+}
+
+/* KSS menu */
+.kss-nav__menu {
+
+  @include list-reset();
+
+  @include breakpoint-proportion(margin-left, negative);
+  @include breakpoint-proportion(margin-right, negative);
+
+  ul {
+
+    @include list-reset();
+
+  }
+
+  li {
+
+    margin: 0;
+
+    @include font-size(14);
+    line-height: 1.5;
+
+    border-top: 1px solid rgba(0,0,0,.05);
+
+  }
+
+  a {
+
+    display: block;
+    padding: rem(4) rem(10);
+    @include breakpoint-proportion(padding-left);
+    @include breakpoint-proportion(padding-right);
+
+  }
+
+  .kss-nav__ref {
+
+    display: inline-block;
+    margin-right: rem(10);
+    color: rgba(0,0,0,.5);
+
+  }
+
+}
+
+.kss-nav__menu-item {
+
+  @include font-size(16);
+  line-height: 1.5;
+
+}
+
+// .kss-nav__ref  {
+
+//   color: rgba(0,0,0,.5);
+//   margin-right: 10px;
+// }
+
+// .kss-modifier__wrapper {
+
+
+// }
