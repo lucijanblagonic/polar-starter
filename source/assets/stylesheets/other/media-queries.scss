@@ -24,7 +24,7 @@
     $extra-large: "(min-width: "$extra-large-value")";
 
     @if $point == extra-large {
-      @media #{$exta-large}           { @content; }
+      @media #{$extra-large}           { @content; }
     }
     @else if $point == large {
       @media #{$large}                { @content; }
