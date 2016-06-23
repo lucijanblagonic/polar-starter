@@ -102,7 +102,7 @@ textarea {
   min-height: rem(100);
   display: block;
 
-  @include breakpoint(m) {
+  @include breakpoint(medium) {
 
     min-height: rem(150);
 
@@ -138,7 +138,7 @@ select {
   border: 1px solid $color-input-regular;
 
   /* Typography */
-  font-family: $font-brand-secondary;
+  font-family: $font-brand-primary;
   @include font-size(16);
   line-height: em(24,16);
   color: $color-text-paragraph;
@@ -170,7 +170,7 @@ select {
   position: relative;
 
   display: block;
-  padding: rem(6) 0 rem(6) rem(32);
+  padding: rem(4) 0 rem(6) rem(24);
 
   font-family: $font-brand-primary;
   @include font-size(16);
@@ -179,16 +179,10 @@ select {
 
   cursor: pointer;
 
-  @include breakpoint(s) {
-
-    @include font-size(18);
-
-  }
-
   &.is-inline {
 
     display: inline-block;
-    margin-right: rem(4);
+    margin-right: rem(8);
 
   }
 
