@@ -39,7 +39,13 @@ h1 {
 
   @include breakpoint(large) {
 
-    @include font-size(32);
+    @include font-size(40);
+
+  }
+
+  @include breakpoint(extra-large) {
+
+    @include font-size(56);
 
   }
 
@@ -53,13 +59,13 @@ h2 {
 
   @include breakpoint(medium) {
 
-    @include font-size(24);
+    @include font-size(28);
 
   }
 
   @include breakpoint(large) {
 
-    @include font-size(28);
+    @include font-size(36);
 
   }
 
@@ -79,7 +85,7 @@ h3 {
 
   @include breakpoint(large) {
 
-    @include font-size(20);
+    @include font-size(26);
 
   }
 
@@ -99,7 +105,7 @@ h4 {
 
   @include breakpoint(large) {
 
-    // @include font-size(20);
+    @include font-size(22);
 
   }
 
