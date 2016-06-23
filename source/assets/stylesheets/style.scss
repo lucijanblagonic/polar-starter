@@ -49,8 +49,10 @@
 //
 // Style guide: patterns
 
+@import 'partials/form-field';         // Form field
 @import 'partials/messages';           // Messages
 @import 'partials/nav-tabs';           // Nav: Tabs
+@import 'partials/nav-list';           // Nav: List
 @import 'partials/nav-page';           // Nav: Page
 
 /* Helpers */
