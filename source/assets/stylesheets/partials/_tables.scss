@@ -7,18 +7,77 @@
 //
 // Markup:
 // <table>
+//   <caption>People drink a lot of coffee each year, but how much is that (in thousand 60kg bags)?</caption>
 //   <thead>
 //     <tr>
-//       <th>1</th>
-//       <th>2</th>
-//     <tr>
+//       <th></th>
+//       <th>2013</th>
+//       <th>2014</th>
+//       <th>CAGR</th>
+//     </tr>
 //   </thead>
 //   <tbody>
 //     <tr>
-//       <td>3</td>
-//       <td>4</td>
+//       <th>Africa</th>
+//       <td>10621</td>
+//       <td>10809</td>
+//       <td>5.6%</td>
+//     </tr>
 //     <tr>
+//       <th>Asia & Oceania</th>
+//       <td>29397</td>
+//       <td>30023</td>
+//       <td>4.5%</td>
+//     </tr>
+//     <tr>
+//       <th>Central America & Mexico</th>
+//       <td>5028</td>
+//       <td>4973</td>
+//       <td>0.0%</td>
+//     </tr>
+//     <tr>
+//       <th>Europe</th>
+//       <td>50621</td>
+//       <td>50291</td>
+//       <td>0.7%</td>
+//     </tr>
+//     <tr>
+//       <th>North America</th>
+//       <td>26931</td>
+//       <td>27674</td>
+//       <td>2.6%</td>
+//     </tr>
+//     <tr>
+//       <th>South America</th>
+//       <td>24897</td>
+//       <td>25393</td>
+//       <td>2.0%</td>
+//     </tr>
 //   </tbody>
 // </table>
 //
 // Style guide: elements.tables
+
+table {
+
+  width: 100%;
+
+}
+
+caption {
+
+  margin-bottom: $unit-xs;
+
+}
+
+th,
+td {
+
+  @include font-size(16);
+  line-height: 1.5;
+
+  padding: $unit-xs $unit-s;
+
+  border-top: 1px solid rgba(0,0,0,.1);
+
+}
