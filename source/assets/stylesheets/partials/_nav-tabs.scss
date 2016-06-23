@@ -10,5 +10,55 @@
 // Style guide: patterns.nav-tabs
 
 .nav-tabs {}
-.nav-tabs__item {}
-.nav-tabs__link {}
+
+.nav-tabs__list {
+
+  @include list-reset();
+
+	font-size: 0;
+
+}
+
+.nav-tabs__item {
+
+  margin: 0;
+
+  display: inline-block;
+
+  border: 1px solid transparent;
+
+  background-color: #f9f9f9;
+
+
+
+  // border-bottom: 1px solid $color-grey-01;
+
+  &:first-child {
+
+    // border-top: 1px solid $color-grey-01;
+
+  }
+
+}
+
+.nav-tabs__item--active {
+
+  border-color: $color-grey-01;
+  background-color: #fff;
+  border-bottom: 0;
+
+
+  .nav-tabs__link {
+
+    color: $color-text-strong;
+  }
+
+}
+
+.nav-tabs__link {
+
+  display: block;
+
+  padding: $unit-xs $unit-s;
+
+}
