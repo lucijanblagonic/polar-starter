@@ -11,6 +11,6 @@ Install [node.js](http://nodejs.org).
 
 Build with `gulp build`
 
-This will create a `build` for project assets and templates and a `styleguide` directory from your SCSS documentation.
+This will create a `build` directory for project assets and templates and a `styleguide` directory from your KSS documentation in CSS.
 
 Use `gulp watch` for on–the–fly updates of your code (templates, js, css) and style guide.
