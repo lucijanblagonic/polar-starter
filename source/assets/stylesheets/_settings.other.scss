@@ -1,0 +1,42 @@
+/* =Settings: Other
+===================================================== */
+
+/* Z-index */
+$z-index-header:                  200;
+$z-index-navigation:              300;
+$z-index-main:                    100;
+$z-index-footer:                  100;
+$z-index-modal:                   500;
+$z-index-skip-links:              600;
+
+/* Units */
+$unit-xs:                       rem(8);
+$unit-s:                        rem(16);
+$unit-m:                        rem(24);
+$unit-l:                        rem(32);
+$unit-xl:                       rem(48);
+
+/* Container padding */
+$container-unit-small:          $unit-s;
+$container-unit-medium:         $unit-m;
+$container-unit-large:          $unit-l;
+
+/* Container max width */
+$container-max-width:           rem(1160);
+
+/* Border radius */
+$border-radius-small:           rem(3);
+$border-radius-normal:          rem(6);
+$border-radius-large:           rem(10);
+
+/* Box shadow */
+$box-shadow-small:              0 rem(1) rem(3) 0 rgba(0,0,0,.2);
+$box-shadow-medium:             0 rem(1) rem(6) 0 rgba(0,0,0,.2);
+$box-shadow-large:              0 rem(1) rem(24) 0 rgba(0,0,0,.2);
+
+/* Media queries */
+$extra-small-value:             24em; // 384px
+$small-value:                   36em; // 576px
+$medium-value:                  48em; // 768px
+$large-value:                   62em; // 992px
+$extra-large-value:             80em; // 1280px

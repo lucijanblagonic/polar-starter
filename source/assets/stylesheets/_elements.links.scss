@@ -1,0 +1,50 @@
+/* =Lists
+===================================================== */
+
+// Links
+//
+// Link examples
+//
+// :hover - Hover state
+// :focus - Focus state
+// :visited - Visited state
+//
+// Markup:
+// <a href="#">Link example</a>
+//
+// Style guide: 4.links
+
+a {
+
+  color: $color-text-link;
+  text-decoration: none;
+  @include transition-fast();
+
+  &:hover {
+
+		color: $color-text-link-hover;
+		text-decoration: underline;
+
+  }
+
+  &:focus {
+
+		color: $color-text-link-hover;
+		text-decoration: underline;
+
+  }
+
+  &:active {
+
+  	color: $color-text-link-hover;
+  	text-decoration: none;
+
+  }
+
+  // &:visited {
+
+		// color: shade($color-text-link, 50%);
+
+  // }
+
+}

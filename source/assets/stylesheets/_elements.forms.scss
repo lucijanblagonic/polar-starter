@@ -5,7 +5,7 @@
 //
 // Global styles
 //
-// Style guide: elements.forms
+// Style guide: 4.forms
 
 /*
  * Fieldset
@@ -34,7 +34,7 @@ fieldset {
 // Markup:
 // <input class="{{modifier_class}}" type="text" placeholder="Example text">
 //
-// Style guide: elements.forms.input
+// Style guide: 4.forms.input
 
 #{$all-text-inputs} {
 
@@ -94,7 +94,7 @@ fieldset {
 // <br>
 // <textarea class="{{modifier_class}}" placeholder="Example text">Hello world.</textarea>
 //
-// Style guide: elements.forms.textarea
+// Style guide: 4.forms.textarea
 
 textarea {
 
@@ -126,7 +126,7 @@ textarea {
 //   <option>Option 3</option>
 // </select>
 //
-// Style guide: elements.forms.select
+// Style guide: 4.forms.select
 
 select {
 
@@ -157,89 +157,5 @@ select {
   // background-repeat: no-repeat;
   // background-size: rem(40) rem(40);
   // background-position: right center;
-
-}
-
-/*
- * Radio + Checkbox
- */
-
-.radio-container,
-.checkbox-container {
-
-  position: relative;
-
-  display: block;
-  padding: rem(4) 0 rem(6) rem(24);
-
-  font-family: $font-brand-primary;
-  @include font-size(16);
-  line-height: 1.5;
-  color: $color-text;
-
-  cursor: pointer;
-
-  &.is-inline {
-
-    display: inline-block;
-    margin-right: rem(8);
-
-  }
-
-}
-
-// Checkbox
-//
-// Checkbox styles
-//
-// Markup:
-// <label class="checkbox-container">
-//   Checkbox Label
-//   <input type="checkbox" checked>
-// </label>
-// <label class="checkbox-container">
-//   Checkbox Label
-//   <input type="checkbox">
-// </label>
-// <label class="checkbox-container">
-//   Checkbox Label
-//   <input type="checkbox">
-// </label>
-//
-// Style guide: elements.forms.checkbox
-
-.checkbox-container > input[type="checkbox"] {
-
-  position: absolute;
-  top: rem(10);
-  left: 0;
-
-}
-
-// Radio
-//
-// Radio styles
-//
-// Markup:
-// <label class="radio-container">
-//   Radio Label
-//   <input type="radio" name="group" checked>
-// </label>
-// <label class="radio-container">
-//   Radio Label
-//   <input type="radio" name="group">
-// </label>
-// <label class="radio-container">
-//   Radio Label
-//   <input type="radio" name="group">
-// </label>
-//
-// Style guide: elements.forms.radio
-
-.radio-container > input[type="radio"] {
-
-  position: absolute;
-  top: rem(10);
-  left: 0;
 
 }

@@ -1,5 +1,11 @@
 /* KSS */
 
+$styleguide-color-main: #3e7dca;
+$styleguide-color-link: #3e7dca;
+$styleguide-color-weak: rgba(0,0,0,.5);
+$styleguide-color-strong: rgba(0,0,0,.9);
+$styleguide-border-radius-small: 3px;
+
 .kss-doc-title {
 
   margin-bottom: rem(24);
@@ -15,7 +21,7 @@
 
   @include breakpoint-proportion(padding);
 
-  background-color: #eee;
+  background-color: tint($styleguide-color-main, 90%);
 
   @include breakpoint(medium) {
 
@@ -60,6 +66,7 @@
 
   }
 
+  > .kss-text,
   > .kss-style,
   > .kss-modifier__wrapper,
   > .kss-markup {
@@ -92,7 +99,7 @@
   .kss-title__ref {
 
     font-weight: $regular;
-    color: $color-text-weak;
+    color: $styleguide-color-link;
 
   }
 
@@ -111,12 +118,10 @@
     @include font-size(16);
     line-height: 1.5;
     font-weight: $regular;
-    // color: $color-text-strong;
     color: rgba(0,0,0,.8);
-    // text-transform: uppercase;
 
     border-left: 4px solid #fce053;
-    border-radius: $border-radius-small;
+    border-radius: $styleguide-border-radius-small;
     padding: rem(8) rem(24);
     background-color: tint(#fce053, 80%);
 
@@ -162,7 +167,7 @@
 
     @include font-size(14);
     line-height: 1.5;
-    color: $color-text-weak;
+    color: $styleguide-color-link;
 
   }
 
@@ -171,7 +176,7 @@
   .kss-markup {
 
     padding: rem(24);
-    border-radius: $border-radius-small;
+    border-radius: $styleguide-border-radius-small;
     // box-shadow: inset rem(4) 0 0 #fce053;
     border-left: 4px solid #fce053;
     background-color: tint(#fce053, 95%);
@@ -262,6 +267,7 @@
     padding: rem(4) rem(10);
     @include breakpoint-proportion(padding-left);
     @include breakpoint-proportion(padding-right);
+    color: $styleguide-color-link;
 
   }
 

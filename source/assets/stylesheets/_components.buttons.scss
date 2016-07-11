@@ -27,7 +27,7 @@
 // </button>
 // <input class="button {{modifier_class}}"  value="Form Button" type="submit"/>
 //
-// Style guide: elements.buttons
+// Style guide: 6.buttons
 
 .button,
 button {
@@ -46,6 +46,7 @@ button {
   text-align: center;
   color: #fff;
   font-weight: $bold;
+  text-decoration: none;
 
   /* Visual */
   background-color: $color-button-regular;
@@ -61,6 +62,7 @@ button {
 
     color: #fff;
     background-color: $color-button-regular-hover;
+    text-decoration: none;
 
   }
 

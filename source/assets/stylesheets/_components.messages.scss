@@ -14,7 +14,7 @@
 //   <p>Lorem ipsum dolor sit amet.</p>
 // </div>
 //
-// Style guide: patterns.message
+// Style guide: 6.message
 
 .message {
 
@@ -22,7 +22,7 @@
   background-color: $color-message-default;
   border-radius: $border-radius-small;
 
-  p {
+  > p {
 
     margin-bottom: $unit-s;
     margin-bottom: 0;
@@ -35,7 +35,7 @@
 
   background-color: $color-message-success;
 
-  p {
+  > p {
 
     color: $color-text-strong-invert;
 
@@ -47,7 +47,7 @@
 
   background-color: $color-message-warning;
 
-  p {
+  > p {
 
     color: $color-text-strong-invert;
 
@@ -59,7 +59,7 @@
 
   background-color: $color-message-danger;
 
-  p {
+  > p {
 
     color: $color-text-strong-invert;
 

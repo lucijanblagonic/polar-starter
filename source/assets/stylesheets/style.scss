@@ -7,7 +7,7 @@
  * Standards for developing flexible, durable, and sustainable HTML and CSS.
  * http://codeguide.co/
  *
- * Frontend development methodology based on BEM
+ * Frontend development methodology based on BEM and ITCSS
  * https://en.bem.info/
  *
  */
@@ -15,51 +15,103 @@
 /* =Include
 ===================================================== */
 
-/* Vendor dependencies */
-@import "bourbon/bourbon";             // Bourbon [http://bourbon.io/docs/]
+// 0 — Overview (styleguide.md)
+// 1 — Settings
+// 2 — Tools
+// 3 — Generic
+// 4 — Elements
+// 5 — Objects
+// 6 — Components
+// 7 — Trumps
 
-/* Authored dependencies */
-@import 'other/normalize';             // Normalize
-@import 'other/addons';                // Additional mixins
-@import 'other/media-queries';         // Media queries
+@import "bourbon/bourbon";
 
-// Styles
+// Settings
 //
-// Global styles.
+// Global variables
 //
-// Style guide: styles
+// Style guide: 1
 
-@import 'partials/base';               // Project variables
-@import 'partials/layout';             // Layout
+// Settings: Global variables, config switches
+@import "settings.colors";
+@import "settings.typography";
+@import "settings.other";
+
+// Tools
+//
+// Default mixins and functions
+//
+// Style guide: 2
+
+// Tools: Default mixins and functions
+@import "tools.mixins";
+@import "tools.media-queries";
+
+// Generic
+//
+// Ground–zero styles (Normalize.css, resets, box-sizing...)
+//
+// Style guide: 3
+
+// Generic: Ground–zero styles (Normalize.css, resets, box-sizing...)
+@import "generic.normalize";
+@import "generic.box-sizing";
+@import "generic.other";
 
 // Elements
 //
-// Elements examples.
+// Unclassed HTML elements (type selectors)
 //
-// Style guide: elements
+// Style guide: 4
 
-@import 'partials/typography';         // Typography
-@import 'partials/buttons';            // Buttons
-@import 'partials/tables';             // Tables
-@import 'partials/forms';              // Forms
+// Elements: Unclassed HTML elements (type selectors)
+@import "elements.headings";
+@import "elements.hr";
+@import "elements.forms";
+@import "elements.links";
+@import "elements.lists";
+@import "elements.page";
+@import "elements.quotes";
+@import "elements.tables";
+@import "elements.images";
 
-// Patterns
+// Objects
 //
-// Building blocks of the website.
+// Cosmetic–free design patterns
 //
-// Style guide: patterns
+// Style guide: 5
 
-@import 'partials/form-field';         // Form field
-@import 'partials/messages';           // Messages
-@import 'partials/nav-tabs';           // Nav: Tabs
-@import 'partials/nav-list';           // Nav: List
-@import 'partials/nav-page';           // Nav: Page
+// Objects: Cosmetic–free design patterns
+@import "objects.layout";
+// @import "objects.media";
+// @import "objects.nav";
 
-/* Helpers */
-@import 'partials/helpers';            // Helpers
+// Components
+//
+// Designed components, chunks of UI
+//
+// Style guide: 6
 
-/* Experimental */
-@import 'partials/experimental';       // Experimental
+// Components: Designed components, chunks of UI
+@import "components.skip-links";
+@import "components.buttons";
+@import "components.forms";
+@import "components.form-field";
+@import "components.nav-breadcrumbs";
+@import "components.nav-list";
+@import "components.nav-tabs";
+@import "components.nav-page";
+@import "components.messages";
 
-/* Style guide */
-@import 'partials/styleguide';         // Styleguide
+// Trumps
+//
+// Helpers and overrides
+//
+// Style guide: 7
+
+// Trumps: Helpers and overrides
+@import "trumps.utilities";
+
+// Playing around
+@import "experimental";
+@import "styleguide";

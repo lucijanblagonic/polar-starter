@@ -1,21 +1,78 @@
-/* =Project specific
+/* =Settings: Colors
 ===================================================== */
 
-/* =Local
-===================================================== */
+// Colors
+//
+// Color scheme.
+//
+// Markup:
+// <h3>Brand</h3>
+// <div class="var-color-brand-primary"></div>
+// <div class="var-color-brand-secondary"></div>
+// <div class="var-color-brand-tertiary"></div>
+// <div class="var-color-page-background"></div>
+// <h3>Typography</h3>
+// <div class="var-color-text"></div>
+// <div class="var-color-text-heading-1"></div>
+// <div class="var-color-text-heading-2"></div>
+// <div class="var-color-text-heading-3"></div>
+// <div class="var-color-text-heading-4"></div>
+// <div class="var-color-text-paragraph"></div>
+// <div class="var-color-text-weak"></div>
+// <div class="var-color-text-strong"></div>
+// <div class="var-color-text-invert"></div>
+// <div class="var-color-text-weak-invert"></div>
+// <div class="var-color-text-strong-invert"></div>
+// <div class="var-color-text-link"></div>
+// <div class="var-color-text-link-hover"></div>
+// <div class="var-color-text-link-visited"></div>
+// <h3>Shades of grey</h3>
+// <div class="var-color-grey-01"></div>
+// <div class="var-color-grey-02"></div>
+// <div class="var-color-grey-03"></div>
+// <div class="var-color-grey-04"></div>
+// <div class="var-color-grey-05"></div>
+// <div class="var-color-grey-06"></div>
+// <div class="var-color-grey-07"></div>
+// <div class="var-color-grey-08"></div>
+// <div class="var-color-grey-09"></div>
+// <div class="var-color-grey-10"></div>
+// <h3>Messages</h3>
+// <div class="var-color-message-default"></div>
+// <div class="var-color-message-success"></div>
+// <div class="var-color-message-warning"></div>
+// <div class="var-color-message-danger"></div>
+// <h3>Forms</h3>
+// <div class="var-color-input-regular"></div>
+// <div class="var-color-input-focus"></div>
+// <div class="var-color-input-success"></div>
+// <div class="var-color-input-error"></div>
+// <div class="var-color-input-required"></div>
+// <div class="var-color-input-checkbox"></div>
+// <div class="var-color-input-checkbox-active"></div>
+// <div class="var-color-input-radio"></div>
+// <div class="var-color-input-radio-active"></div>
+// <h3>Buttons</h3>
+// <div class="var-color-button-regular"></div>
+// <div class="var-color-button-regular-hover"></div>
+// <div class="var-color-button-primary"></div>
+// <div class="var-color-button-primary-hover"></div>
+// <div class="var-color-button-secondary"></div>
+// <div class="var-color-button-secondary-hover"></div>
+// <div class="var-color-button-invert"></div>
+// <div class="var-color-button-invert-hover"></div>
+// <div class="var-color-button-inactive"></div>
+//
+// Style guide: 1.colors
 
+/* Local */
 $local-blue:                      blue;
 $local-red:                       red;
 
-/* =Brand
-===================================================== */
-
+/* Brand */
 $color-brand-primary:             #0065bc;
 $color-brand-secondary:           #ffda00;
 $color-brand-tertiary:            #768592;
-
-/* =Colors
-===================================================== */
 
 /* Visuals */
 $color-page-background:           #f3f3f3;
@@ -80,72 +137,3 @@ $color-button-inactive:           #eeeeee;
 $color-explicit-red:              #ed1c24;
 $color-explicit-green:            #00a651;
 $color-explicit-blue:             #034ea2;
-
-/* =Typography
-===================================================== */
-
-/* Fonts */
-$font-brand-primary:              $helvetica;
-$font-brand-secondary:            $georgia;
-
-/* Font weights */
-$hairline:                        100;
-$thin:                            200;
-$light:                           300;
-$regular:                         400;
-$medium:                          500;
-$semibold:                        600;
-$bold:                            700;
-$black:                           900;
-
-/* =Z-index
-===================================================== */
-
-$z-index-header:                  200;
-$z-index-navigation:              300;
-$z-index-main:                    100;
-$z-index-footer:                  100;
-$z-index-modal:                   500;
-$z-index-skip-links:              600;
-
-/* =Other
-===================================================== */
-
-/* Units */
-$unit-xs: rem(8);
-$unit-s:  rem(16);
-$unit-m:  rem(24);
-$unit-l:  rem(32);
-$unit-xl: rem(48);
-
-/* Container padding */
-$container-unit-small:          $unit-s;
-$container-unit-medium:         $unit-m;
-$container-unit-large:          $unit-l;
-
-/* Container max width */
-$container-max-width:           rem(1040);
-
-/* Border radius */
-$border-radius-small:           rem(3);
-$border-radius-normal:          rem(6);
-$border-radius-large:           rem(10);
-
-/* Box shadow */
-$box-shadow-small:              0 rem(1) rem(3) 0 rgba(0,0,0,.2);
-$box-shadow-medium:             0 rem(1) rem(6) 0 rgba(0,0,0,.2);
-$box-shadow-large:              0 rem(1) rem(24) 0 rgba(0,0,0,.2);
-
-/* Site logo */
-// $site-logo-width-small: rem(100);
-// $site-logo-height-small: rem(32);
-// $site-logo-width: rem(204);
-// $site-logo-height: rem(40);
-$site-logo-symbol-width: rem(40);
-
-/* =Icons
-===================================================== */
-
-$icomoon-font-path: "../../fonts" !default;
-
-$stream-zoom-in: "\e922";

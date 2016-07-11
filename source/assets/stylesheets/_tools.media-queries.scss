@@ -7,12 +7,12 @@
   // Does browser support media queries
   $media-query-support: true !global !default;
 
-  // Style changes at:
-  $extra-small-value: 24em; // 384px
-  $small-value:       36em; // 576px
-  $medium-value:      48em; // 768px
-  $large-value:       62em; // 992px
-  $extra-large-value: 80em; // 1280px
+  // // Style changes at:
+  $extra-small-value: 24em !default; // 384px
+  $small-value:       36em !default; // 576px
+  $medium-value:      48em !default; // 768px
+  $large-value:       62em !default; // 992px
+  $extra-large-value: 80em !default; // 1280px
 
   // Mobile first (min-width)
   @if ($media-query-support) {

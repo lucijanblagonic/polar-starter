@@ -1,0 +1,112 @@
+/* =Headings
+===================================================== */
+
+// Headings
+//
+// Heading examples
+//
+// Markup:
+// <h1>Nikola Tesla — Heading 1</h1>
+// <h2>War of Currents — Heading 2</h2>
+// <h3>X-ray experimentation — Heading 3</h3>
+// <h4>AC and the induction motor — Heading 4</h4>
+//
+// Style guide: 4.headings
+
+h1,
+h2,
+h3,
+h4 {
+
+  margin-bottom: rem(8);
+  margin-top: 0;
+
+  font-weight: $bold;
+
+}
+
+h1 {
+
+  @include font-size(24);
+  line-height: 1.2;
+  color: $color-text-heading-1;
+
+  @include breakpoint(medium) {
+
+    @include font-size(28);
+
+  }
+
+  @include breakpoint(large) {
+
+    @include font-size(40);
+
+  }
+
+  @include breakpoint(extra-large) {
+
+    @include font-size(56);
+
+  }
+
+}
+
+h2 {
+
+  @include font-size(22);
+  line-height: 1.2;
+  color: $color-text-heading-2;
+
+  @include breakpoint(medium) {
+
+    @include font-size(28);
+
+  }
+
+  @include breakpoint(large) {
+
+    @include font-size(36);
+
+  }
+
+}
+
+h3 {
+
+  @include font-size(20);
+  line-height: 1.3;
+  color: $color-text-heading-3;
+
+  @include breakpoint(medium) {
+
+    @include font-size(22);
+
+  }
+
+  @include breakpoint(large) {
+
+    @include font-size(26);
+
+  }
+
+}
+
+h4 {
+
+  @include font-size(18);
+  line-height: 1.3;
+  color: $color-text-heading-4;
+
+  @include breakpoint(medium) {
+
+    @include font-size(20);
+
+  }
+
+  @include breakpoint(large) {
+
+    @include font-size(22);
+
+  }
+
+}
