@@ -5,6 +5,10 @@
 $font-brand-primary:              $helvetica;
 $font-brand-secondary:            $georgia;
 
+/* Font use case */
+$font-body:                       $font-brand-primary;
+$font-headline:                   $font-brand-secondary;
+
 /* Font weights */
 $hairline:                        100;
 $thin:                            200;
