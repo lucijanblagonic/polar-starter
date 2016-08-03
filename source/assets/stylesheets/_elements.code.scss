@@ -1,0 +1,62 @@
+/* =Code
+===================================================== */
+
+// Code
+//
+// Markup:
+// <pre>
+// <code>&lt;tr data-start-time="2014/04/24 9:00:00" data-end-time="2014/04/24 09:15:00"&gt;
+//   &lt;td scope="row"&gt;9:00 - 09:15&lt;/td&gt;
+//   &lt;td&gt;Opening&lt;/td&gt;
+// &lt;/tr&gt;</code>
+// </pre>
+//
+// Style guide: 4.code
+
+pre,
+code {
+
+  border: 1px solid tint($color-brand-primary, 60%);
+  border-top-color: tint($color-brand-primary, 10%);
+  border-radius: $border-radius-small;
+
+  @include font-size(14);
+  line-height: 1.5;
+  color: $color-text;
+  font-family: $monospace;
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+
+  hyphens: none;
+  tab-size: 2;
+
+}
+
+pre {
+
+  margin: $unit-default 0;
+  padding: $unit-default;
+
+  overflow: scroll;
+
+}
+
+code {
+
+  padding: rem(2) rem(3);
+  background-color: tint($color-brand-secondary, 80%);
+
+}
+
+pre code {
+
+  border-radius: 0;
+  border: 0;
+  padding: 0;
+  background: 0;
+
+}
