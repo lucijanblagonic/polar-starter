@@ -1,0 +1,20 @@
+/* =Nav
+===================================================== */
+
+.nav {
+
+	@include list-reset();
+
+}
+
+.nav__item {
+
+	display: inline-block;
+
+}
+
+.nav__link {
+
+	display: block;
+
+}
