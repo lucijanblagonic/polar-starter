@@ -47,6 +47,7 @@
 
   @include font-size(16);
   line-height: 1.5;
+  font-family: $font-brand-primary;
 
   @include breakpoint(to-small) {
 
@@ -159,6 +160,7 @@
 
     color: $color-text-strong-invert;
     background-color: $color-text-link;
+    text-decoration: none;
 
   }
 

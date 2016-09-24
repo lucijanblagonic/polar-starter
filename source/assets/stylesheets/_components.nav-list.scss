@@ -14,6 +14,7 @@
 .nav-list__list {
 
   @include list-reset();
+  @include clearfix();
 
 }
 
@@ -21,6 +22,8 @@
 
   margin: 0;
   border-bottom: 1px solid $color-grey-01;
+
+  font-family: $font-brand-primary;
 
   &:first-child {
 

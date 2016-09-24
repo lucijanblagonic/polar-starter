@@ -10,5 +10,44 @@
 // Style guide: 6.nav-breadcrumbs
 
 .nav-breadcrumbs {}
-.nav-breadcrumbs__item {}
-.nav-breadcrumbs__link {}
+
+.nav-breadcrumbs__list {
+
+  @include list-reset();
+  @include clearfix();
+
+}
+
+.nav-breadcrumbs__item {
+
+  float: left;
+
+  margin: 0;
+
+  &:after {
+
+    margin: 0 rem(4);
+
+    color: $color-text-weak;
+
+    content: "/";
+
+  }
+
+}
+
+.nav-breadcrumbs__item--active {
+
+  &:after {
+
+    display: none;
+
+  }
+
+}
+
+.nav-breadcrumbs__link {
+
+  display: inline-block;
+
+}

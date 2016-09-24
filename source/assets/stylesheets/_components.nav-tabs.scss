@@ -14,30 +14,35 @@
 .nav-tabs__list {
 
   @include list-reset();
+  @include clearfix();
 
-	font-size: 0;
+  padding: $unit-xs;
+  background-color: #f9f9f9;
+
+	@include breakpoint(small) {
+
+    padding: $unit-xs $unit-xs 0 $unit-xs;
+    border-bottom: 1px solid $color-border-weak;
+
+  }
 
 }
 
 .nav-tabs__item {
 
+  display: block;
+
   margin: 0;
 
-  display: inline-block;
+  font-family: $font-brand-primary;
 
-  border: 1px solid transparent;
+  @include breakpoint(small) {
 
-  @include font-size(16);
+    float: left;
 
-  background-color: #f9f9f9;
-
-
-
-  // border-bottom: 1px solid $color-grey-01;
-
-  &:first-child {
-
-    // border-top: 1px solid $color-grey-01;
+    margin-right: $unit-xs;
+    border: 1px solid transparent;
+    border-bottom: none;
 
   }
 
@@ -45,14 +50,41 @@
 
 .nav-tabs__item--active {
 
-  border-color: $color-grey-01;
+  border-color: $color-border-weak;
+  border-bottom-color: #fff;
   background-color: #fff;
-  border-bottom: 0;
 
+  position: relative;
+
+  &:before {
+
+    content: "";
+
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+
+    height: 1px;
+
+    background-color: #fff;
+
+  }
 
   .nav-tabs__link {
 
     color: $color-text-strong;
+
+    &:hover,
+    &:focus,
+    &:active {
+
+      color: $color-text-strong;
+      text-decoration: none;
+      background-color: transparent;
+
+    }
+
   }
 
 }
@@ -62,5 +94,13 @@
   display: block;
 
   padding: $unit-xs $unit-s;
+
+  &:hover,
+  &:focus,
+  &:active {
+
+    background-color: $color-grey-01;
+
+  }
 
 }
