@@ -14,5 +14,25 @@
 blockquote {
 
   margin: 0;
+  margin-bottom: rem(24);
+
+}
+
+blockquote {
+
+	padding: 2em;
+	background-color: $color-grey-01;
+
+	p {
+
+		font-style: italic;
+
+	}
+
+	p:last-child {
+
+		margin-bottom: 0;
+
+	}
 
 }
