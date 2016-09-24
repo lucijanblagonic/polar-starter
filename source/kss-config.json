@@ -8,7 +8,8 @@
     "../build/assets/stylesheets/style.css"
   ],
   "js": [
-    "../build/assets/scripts/main.js"
+    "//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js",
+    "../build/assets/scripts/all.js"
   ],
 
   "title": "KSS Style Guide",
