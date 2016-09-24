@@ -45,10 +45,7 @@ $styleguide-border-radius-small: 3px;
 
   @include breakpoint(medium) {
 
-    // float: right;
-    // width: 100%;
     margin-left: rem(300);
-    // width: 70%;
 
   }
 
@@ -60,6 +57,7 @@ $styleguide-border-radius-small: 3px;
   @include breakpoint-proportion(padding);
 
   border-bottom: 1px solid rgba(0,0,0,.1);
+  background-color: #fff;
 
   &:last-child {
 
@@ -104,7 +102,11 @@ $styleguide-border-radius-small: 3px;
 
   }
 
-  .kss-title__permalink {}
+  .kss-title__permalink {
+
+    color: $styleguide-color-link;
+
+  }
 
   .kss-title__ref {
 
