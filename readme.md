@@ -4,6 +4,8 @@
 
 Simple project starter that generates a style guide using [KSS](http://warpspire.com/kss/) methodology. Setup with Gulp. Place to learn, experiment and improve project delivery for clients.
 
+![Style guide created with KSS methodology](screenshot.png)
+
 ## Getting Started
 
 Install [node.js](http://nodejs.org).
