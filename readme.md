@@ -34,3 +34,13 @@ Feel free to modify everything in the `source` directory and keep in mind that `
 
 	build/ [generated via gulp]
 	styleguide/ [generated via gulp]
+
+## Additional Resources
+
+More information about [style guides](http://www.styleguides.io/).
+
+Articles and tools to start documenting interfaces and build style guides:
+
+* [Documenting interfaces](http://polarnorth.org/blog/documenting-interfaces/)
+* [Interface inventory](https://github.com/lucijanblagonic/interface-inventory/)
+* [Moving the design process to the browser](polarnorth.org/blog/moving-the-design-process-to-the-browser/)
