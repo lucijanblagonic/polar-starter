@@ -45,4 +45,4 @@ Articles and tools to start documenting interfaces and build style guides:
 
 * [Documenting interfaces](http://polarnorth.org/blog/documenting-interfaces/)
 * [Interface inventory](https://github.com/lucijanblagonic/interface-inventory/)
-* [Moving the design process to the browser](polarnorth.org/blog/moving-the-design-process-to-the-browser/)
+* [Moving the design process to the browser](http://polarnorth.org/blog/moving-the-design-process-to-the-browser/)
