@@ -68,7 +68,7 @@ gulp.task('browserSync', function() {
 gulp.task('stylesheets', function() {
   gulp.src('source/assets/stylesheets/*.scss') // Get all *.scss files
     .pipe(sourcemaps.init()) // Initialize sourcemap plugin
-    .pipe(sass()) // Compiling sass
+    .pipe(sass().on('error', sass.logError)) // Compiling sass
     .pipe(autoprefixer('last 2 version')) // Adding browser prefixes
     .pipe(sourcemaps.write()) // Writing sourcemaps
     .pipe(cssnano()) // Compress
