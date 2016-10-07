@@ -7,7 +7,7 @@
     "gulp": "^3.9.1",
     "gulp-sass": "^2.3.1",
     "gulp-autoprefixer": "^3.1.0",
-    "gulp-file-include": "^0.14.0"
+    "gulp-file-include": "^1.0.0"
   },
   "devDependencies": {
     "browser-sync": "^2.13.0",
