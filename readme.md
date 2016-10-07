@@ -13,11 +13,15 @@ Install [node.js](http://nodejs.org).
 	npm install gulp
 	npm install
 
-Build with `gulp build`
+You are done.
 
-This will create a `build` directory for project assets and templates and a `styleguide` directory from your KSS documentation in CSS.
+### `gulp`
 
-Use `gulp watch` for on–the–fly updates of your code (templates, js, css) and style guide.
+Use `gulp` for on–the–fly updates of your code (templates, js, css) and style guide.
+
+### `gulp build`
+
+This will create a `build` directory for project assets and templates and a `styleguide` directory from your KSS documentation in CSS **without browser-sync live preview**.
 
 ## Directory Structure
 

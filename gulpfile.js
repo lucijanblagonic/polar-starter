@@ -58,8 +58,11 @@ gulp.task('templates', function() {
 // Start browserSync server
 gulp.task('browserSync', function() {
   browserSync({
+    // Display the build folder first
+    startPath: 'build',
     server: {
-      baseDir: 'build'
+      // Start in root (important for relative paths between build and style guide folders)
+      baseDir: ''
     }
   })
 })
@@ -104,12 +107,13 @@ gulp.task('fonts', function() {
 });
 
 // Start watch groups of tasks
-gulp.task('watch', ['browserSync', 'templates', 'stylesheets', 'scripts', 'kss'], function() {
+gulp.task('default', ['browserSync', 'templates', 'stylesheets', 'scripts', 'kss'], function() {
   gulp.watch('source/assets/stylesheets/**/*.scss', ['stylesheets']); // Watch for SCSS changes
   gulp.watch('source/assets/scripts/**/*.js', ['scripts']); // Watch for JS changes
   gulp.watch('source/**/*.html', ['templates']); // Watch for template changes
   gulp.watch('source/**', ['kss']); // Watch for style guide changes
   gulp.watch('build/**.html', browserSync.reload);
+  gulp.watch('styleguide/**.html', browserSync.reload);
 });
 
 // Start build task
