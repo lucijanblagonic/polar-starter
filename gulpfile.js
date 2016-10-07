@@ -107,9 +107,11 @@ gulp.task('fonts', function() {
 });
 
 // Start watch groups of tasks
-gulp.task('default', ['browserSync', 'templates', 'stylesheets', 'scripts', 'kss'], function() {
+gulp.task('default', ['browserSync', 'templates', 'stylesheets', 'scripts', 'images', 'fonts', 'kss'], function() {
   gulp.watch('source/assets/stylesheets/**/*.scss', ['stylesheets']); // Watch for SCSS changes
   gulp.watch('source/assets/scripts/**/*.js', ['scripts']); // Watch for JS changes
+  gulp.watch('source/assets/images/**/*', ['images']); // Watch for image changes
+  gulp.watch('source/assets/fonts/**/*', ['fonts']); // Watch for font changes
   gulp.watch('source/**/*.html', ['templates']); // Watch for template changes
   gulp.watch('source/**', ['kss']); // Watch for style guide changes
   gulp.watch('build/**.html', browserSync.reload);
