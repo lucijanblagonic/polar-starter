@@ -3,65 +3,77 @@
 
 // Colors
 //
-// Color scheme.
+// Color scheme grouped by context. When adding new colors, don't forget to add a CSS reference in `_objects.colors.scss`.
 //
 // Markup:
-// <h3>Brand</h3>
-// <div class="var-color-brand-primary"></div>
-// <div class="var-color-brand-secondary"></div>
-// <div class="var-color-brand-tertiary"></div>
-// <div class="var-color-page-background"></div>
-// <h3>Typography</h3>
-// <div class="var-color-text"></div>
-// <div class="var-color-text-heading-1"></div>
-// <div class="var-color-text-heading-2"></div>
-// <div class="var-color-text-heading-3"></div>
-// <div class="var-color-text-heading-4"></div>
-// <div class="var-color-text-paragraph"></div>
-// <div class="var-color-text-weak"></div>
-// <div class="var-color-text-strong"></div>
-// <div class="var-color-text-invert"></div>
-// <div class="var-color-text-weak-invert"></div>
-// <div class="var-color-text-strong-invert"></div>
-// <div class="var-color-text-link"></div>
-// <div class="var-color-text-link-hover"></div>
-// <div class="var-color-text-link-visited"></div>
-// <h3>Shades of grey</h3>
-// <div class="var-color-grey-01"></div>
-// <div class="var-color-grey-02"></div>
-// <div class="var-color-grey-03"></div>
-// <div class="var-color-grey-04"></div>
-// <div class="var-color-grey-05"></div>
-// <div class="var-color-grey-06"></div>
-// <div class="var-color-grey-07"></div>
-// <div class="var-color-grey-08"></div>
-// <div class="var-color-grey-09"></div>
-// <div class="var-color-grey-10"></div>
-// <h3>Messages</h3>
-// <div class="var-color-message-default"></div>
-// <div class="var-color-message-success"></div>
-// <div class="var-color-message-warning"></div>
-// <div class="var-color-message-danger"></div>
-// <h3>Forms</h3>
-// <div class="var-color-input-regular"></div>
-// <div class="var-color-input-focus"></div>
-// <div class="var-color-input-success"></div>
-// <div class="var-color-input-error"></div>
-// <div class="var-color-input-required"></div>
-// <div class="var-color-input-checkbox"></div>
-// <div class="var-color-input-checkbox-active"></div>
-// <div class="var-color-input-radio"></div>
-// <div class="var-color-input-radio-active"></div>
-// <h3>Buttons</h3>
-// <div class="var-color-button-regular"></div>
-// <div class="var-color-button-regular-hover"></div>
-// <div class="var-color-button-primary"></div>
-// <div class="var-color-button-primary-hover"></div>
-// <div class="var-color-button-secondary"></div>
-// <div class="var-color-button-secondary-hover"></div>
-// <div class="var-color-button-invert"></div>
-// <div class="var-color-button-invert-hover"></div>
-// <div class="var-color-button-inactive"></div>
+// <h3 class="color-card-title">Brand</h3>
+// <div class="color-card-group">
+// 	<div class="var-color-brand-primary"><span class="color-card"></span></div>
+// 	<div class="var-color-brand-secondary"><span class="color-card"></span></div>
+// 	<div class="var-color-brand-tertiary"><span class="color-card"></span></div>
+// 	<div class="var-color-page-background"><span class="color-card"></span></div>
+// </div>
+// <h3 class="color-card-title">Typography</h3>
+// <div class="color-card-group">
+// 	<div class="var-color-text"><span class="color-card"></span></div>
+// 	<div class="var-color-text-heading-1"><span class="color-card"></span></div>
+// 	<div class="var-color-text-heading-2"><span class="color-card"></span></div>
+// 	<div class="var-color-text-heading-3"><span class="color-card"></span></div>
+// 	<div class="var-color-text-heading-4"><span class="color-card"></span></div>
+// 	<div class="var-color-text-paragraph"><span class="color-card"></span></div>
+// 	<div class="var-color-text-weak"><span class="color-card"></span></div>
+// 	<div class="var-color-text-strong"><span class="color-card"></span></div>
+// 	<div class="var-color-text-invert"><span class="color-card"></span></div>
+// 	<div class="var-color-text-weak-invert"><span class="color-card"></span></div>
+// 	<div class="var-color-text-strong-invert"><span class="color-card"></span></div>
+// 	<div class="var-color-text-link"><span class="color-card"></span></div>
+// 	<div class="var-color-text-link-hover"><span class="color-card"></span></div>
+// 	<div class="var-color-text-link-visited"><span class="color-card"></span></div>
+// </div>
+// <h3 class="color-card-title">Shades of grey</h3>
+// <div class="color-card-group">
+// 	<div class="var-color-grey-01"><span class="color-card"></span></div>
+// 	<div class="var-color-grey-02"><span class="color-card"></span></div>
+// 	<div class="var-color-grey-03"><span class="color-card"></span></div>
+// 	<div class="var-color-grey-04"><span class="color-card"></span></div>
+// 	<div class="var-color-grey-05"><span class="color-card"></span></div>
+// 	<div class="var-color-grey-06"><span class="color-card"></span></div>
+// 	<div class="var-color-grey-07"><span class="color-card"></span></div>
+// 	<div class="var-color-grey-08"><span class="color-card"></span></div>
+// 	<div class="var-color-grey-09"><span class="color-card"></span></div>
+// 	<div class="var-color-grey-10"><span class="color-card"></span></div>
+// </div>
+// <h3 class="color-card-title">Messages</h3>
+// <div class="color-card-group">
+// 	<div class="var-color-message-default"><span class="color-card"></span></div>
+// 	<div class="var-color-message-success"><span class="color-card"></span></div>
+// 	<div class="var-color-message-warning"><span class="color-card"></span></div>
+// 	<div class="var-color-message-danger"><span class="color-card"></span></div>
+// </div>
+// <h3 class="color-card-title">Forms</h3>
+// <div class="color-card-group">
+// 	<div class="var-color-input-regular"><span class="color-card"></span></div>
+// 	<div class="var-color-input-focus"><span class="color-card"></span></div>
+// 	<div class="var-color-input-success"><span class="color-card"></span></div>
+// 	<div class="var-color-input-error"><span class="color-card"></span></div>
+// 	<div class="var-color-input-required"><span class="color-card"></span></div>
+// 	<div class="var-color-input-checkbox"><span class="color-card"></span></div>
+// 	<div class="var-color-input-checkbox-active"><span class="color-card"></span></div>
+// 	<div class="var-color-input-radio"><span class="color-card"></span></div>
+// 	<div class="var-color-input-radio-active"><span class="color-card"></span></div>
+// </div>
+// <h3 class="color-card-title">Buttons</h3>
+// <div class="color-card-group">
+// 	<div class="var-color-button-regular"><span class="color-card"></span></div>
+// 	<div class="var-color-button-regular-hover"><span class="color-card"></span></div>
+// 	<div class="var-color-button-primary"><span class="color-card"></span></div>
+// 	<div class="var-color-button-primary-hover"><span class="color-card"></span></div>
+// 	<div class="var-color-button-secondary"><span class="color-card"></span></div>
+// 	<div class="var-color-button-secondary-hover"><span class="color-card"></span></div>
+// 	<div class="var-color-button-invert"><span class="color-card"></span></div>
+// 	<div class="var-color-button-invert-hover"><span class="color-card"></span></div>
+// 	<div class="var-color-button-inactive"><span class="color-card"></span></div>
+// </div>
 //
 // Style guide: 1.colors
 

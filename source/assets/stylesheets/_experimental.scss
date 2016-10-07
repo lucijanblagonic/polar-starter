@@ -1,23 +1,7 @@
 /* =Experimental
 ===================================================== */
 
-// Docs
-
-.docs-header {}
-.docs-main {}
-.docs-navigation {}
-
-.docs-card {}
-.docs-card__title {}
-.docs-card__description {}
-.docs-card__content {}
-.docs-card__code {}
-
-.docs-nav {}
-.docs-nav__item {}
-.docs-nav__link {}
-
-.docs-color {}
+/* Feel free to delete everything here */
 
 /* Nav: Header */
 
@@ -117,100 +101,6 @@
 .gallery-item {}
 .gallery-item__link {}
 .gallery-item__image {}
-
-
-
-[class*="var-color"] {
-
-  padding-left: 20%;
-  margin-bottom: 8px;
-
-  &:before {
-
-    display: block;
-
-    padding: 4px 10px;
-    padding-bottom: 0;
-    margin-bottom: 0;
-
-    @include font-size(14);
-    line-height: 1.4;
-    font-family: $helvetica;
-    font-weight: $bold;
-    color: rgba(0,0,0,.8);
-    background-color: #fff;
-
-  }
-
-  &:after {
-
-    display: block;
-
-    padding: 4px 10px;
-    padding-top: 0;
-
-    @include font-size(12);
-    line-height: 1.4;
-    font-family: $monospace;
-    color: rgba(0,0,0,.6);
-    background-color: #fff;
-
-    white-space: pre;
-
-  }
-
-}
-
-@include color-card($color-brand-primary, 'color-brand-primary', 'Brand primary');
-@include color-card($color-brand-secondary, 'color-brand-secondary', 'Brand secondary');
-@include color-card($color-brand-tertiary, 'color-brand-tertiary', 'Brand tertiary');
-@include color-card($color-page-background, 'color-page-background', 'Page background');
-@include color-card($color-text, 'color-text', 'Regular text');
-@include color-card($color-text-heading-1, 'color-text-heading-1', 'Heading 1');
-@include color-card($color-text-heading-2, 'color-text-heading-2', 'Heading 2');
-@include color-card($color-text-heading-3, 'color-text-heading-3', 'Heading 3');
-@include color-card($color-text-heading-4, 'color-text-heading-4', 'Heading 4');
-@include color-card($color-text-paragraph, 'color-text-paragraph', 'Paragraph');
-@include color-card($color-text-weak, 'color-text-weak', 'Weak text');
-@include color-card($color-text-strong, 'color-text-strong', 'Strong text');
-@include color-card($color-text-invert, 'color-text-invert', 'Invert text');
-@include color-card($color-text-weak-invert, 'color-text-weak-invert', 'Weak invert text');
-@include color-card($color-text-strong-invert, 'color-text-strong-invert', 'Strong invert text');
-@include color-card($color-text-link, 'color-text-link', 'Link');
-@include color-card($color-text-link-hover, 'color-text-link-hover', 'Hover link');
-@include color-card($color-text-link-visited, 'color-text-link-visited', 'Visited link');
-@include color-card($color-grey-01, 'color-grey-01', 'Grey 1 (Black 10%)');
-@include color-card($color-grey-02, 'color-grey-02', 'Grey 2 (Black 20%)');
-@include color-card($color-grey-03, 'color-grey-03', 'Grey 3 (Black 30%)');
-@include color-card($color-grey-04, 'color-grey-04', 'Grey 4 (Black 40%)');
-@include color-card($color-grey-05, 'color-grey-05', 'Grey 5 (Black 50%)');
-@include color-card($color-grey-06, 'color-grey-06', 'Grey 6 (Black 60%)');
-@include color-card($color-grey-07, 'color-grey-07', 'Grey 7 (Black 70%)');
-@include color-card($color-grey-08, 'color-grey-08', 'Grey 8 (Black 80%)');
-@include color-card($color-grey-09, 'color-grey-09', 'Grey 9 (Black 90%)');
-@include color-card($color-grey-10, 'color-grey-10', 'Grey 10 (Black 100%)');
-@include color-card($color-message-default, 'color-message-default', 'Message default');
-@include color-card($color-message-success, 'color-message-success', 'Message success');
-@include color-card($color-message-warning, 'color-message-warning', 'Message warning');
-@include color-card($color-message-danger, 'color-message-danger', 'Message danger');
-@include color-card($color-input-regular, 'color-input-regular', 'Input regular');
-@include color-card($color-input-focus, 'color-input-focus', 'Input focused');
-@include color-card($color-input-success, 'color-input-success', 'Input success');
-@include color-card($color-input-error, 'color-input-error', 'Input error');
-@include color-card($color-input-required, 'color-input-required', 'Input required');
-@include color-card($color-input-checkbox, 'color-input-checkbox', 'Checkbox');
-@include color-card($color-input-checkbox-active, 'color-input-checkbox-active', 'Active checkbox');
-@include color-card($color-input-radio, 'color-input-radio', 'Radio');
-@include color-card($color-input-radio-active, 'color-input-radio-active', 'Radio active');
-@include color-card($color-button-regular, 'color-button-regular', 'Regular button');
-@include color-card($color-button-regular-hover, 'color-button-regular-hover', 'Regular button hover');
-@include color-card($color-button-primary, 'color-button-primary', 'Primary button');
-@include color-card($color-button-primary-hover, 'color-button-primary-hover', 'Primary button hover');
-@include color-card($color-button-secondary, 'color-button-secondary', 'Secondary button');
-@include color-card($color-button-secondary-hover, 'color-button-secondary-hover', 'Secondary button hover');
-@include color-card($color-button-invert, 'color-button-invert', 'Invert button');
-@include color-card($color-button-invert-hover, 'color-button-invert-hover', 'Invert button hover');
-@include color-card($color-button-inactive, 'color-button-inactive', 'Inactive button');
 
 /*
  * Container

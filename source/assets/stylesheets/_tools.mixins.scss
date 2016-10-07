@@ -163,10 +163,14 @@
 
   .var-#{$color-var-name} {
 
-    background-color: $color-var-value;
+    .color-card {
 
-    &:before { content: "#{$color-var-title}"; }
-    &:after  { content: "$#{$color-var-name}: #{$color-var-value};" }
+      background-color: $color-var-value;
+
+      &:before { content: "#{$color-var-title}"; }
+      &:after  { content: "$#{$color-var-name}: #{$color-var-value};" }
+
+    }
 
   }
 

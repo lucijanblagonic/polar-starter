@@ -1,5 +1,10 @@
-/* KSS */
+/*
+ * KSS Template
+ *
+ * Styling of the default Knyle Style Sheets template
+ */
 
+/* Define basic variables and colors */
 $styleguide-color-main: #3e7dca;
 $styleguide-color-link: #3e7dca;
 $styleguide-color-weak: rgba(0,0,0,.5);
@@ -193,6 +198,8 @@ $styleguide-border-radius-small: 3px;
     border-left: 4px solid #fce053;
     background-color: tint(#fce053, 95%);
 
+    clear: both;
+
   }
 
   pre[class*="language-"] {
@@ -300,13 +307,60 @@ $styleguide-border-radius-small: 3px;
 
 }
 
-// .kss-nav__ref  {
+/*
+ * Style guide preview
+ *
+ * Action for switching from project to style guide
+ * This is visible **on the project itself**
+ */
 
-//   color: rgba(0,0,0,.5);
-//   margin-right: 10px;
-// }
+.action-styleguide {
 
-// .kss-modifier__wrapper {
+  display: block;
+  padding: rem(20) rem(20);
+  border: none;
 
+  text-align: center;
+  text-decoration: none;
 
-// }
+  color: rgba(255,255,255,.75);
+  background-color: #151515;
+
+  &:hover,
+  &:focus,
+  &:active {
+
+    border: none;
+
+    background: #000;
+    color: rgba(255,255,255,1);
+    text-decoration: none;
+
+  }
+
+}
+
+.action-styleguide__title {
+
+  margin: 0;
+
+  @include font-size(18);
+  line-height: 1.5;
+  font-weight: $bold;
+
+  // color: rgba(255,255,255,1);
+  color: yellow;
+
+}
+
+.action-styleguide__description {
+
+  margin: 0;
+
+  @include font-size(14);
+  line-height: 1.5;
+  font-weight: $regular;
+
+  color: inherit;
+
+}
