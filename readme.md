@@ -41,6 +41,12 @@ Feel free to modify everything in the `source` directory and keep in mind that `
 	build/ [generated via gulp]
 	styleguide/ [generated via gulp]
 
+## Interesting Bits
+
+* Uses [Bourbon](bourbon.io), a lightweight Sass Tool Set
+* Uses [Susy](susy.oddbird.net) for grids
+* CSS architecture based on ITCSS (Inverted Triangle CSS) by [Harry Roberts](http://csswizardry.com) [Article](http://www.creativebloq.com/web-design/manage-large-css-projects-itcss-101517528)
+
 ## Additional Resources
 
 More information about [style guides](http://www.styleguides.io/).
