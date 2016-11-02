@@ -153,9 +153,9 @@ $styleguide-border-radius-small: 3px;
 
   .kss-modifier__example {
 
-    // margin-top: rem(8);
     margin-top: rem(24);
     margin-bottom: rem(24);
+    @include clearfix();
 
     &:last-child {
 
