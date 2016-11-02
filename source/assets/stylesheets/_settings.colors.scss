@@ -80,11 +80,12 @@
 /* Local */
 $local-blue:                      blue;
 $local-red:                       red;
+$local-grey:                      gray;
 
 /* Brand */
-$color-brand-primary:             #0065bc;
-$color-brand-secondary:           #ffda00;
-$color-brand-tertiary:            #768592;
+$color-brand-primary:             $local-blue;
+$color-brand-secondary:           $local-red;
+$color-brand-tertiary:            $local-grey;
 
 /* Visuals */
 $color-page-background:           #f3f3f3;
@@ -140,11 +141,11 @@ $color-input-radio:               #ddd;
 $color-input-radio-active:        $color-brand-primary;
 
 /* Buttons */
-$color-button-regular:            #768592;
+$color-button-regular:            $color-brand-tertiary;
 $color-button-regular-hover:      darken($color-button-regular, 20%);
-$color-button-primary:            #0065bc;
+$color-button-primary:            blue;
 $color-button-primary-hover:      darken($color-button-primary, 10%);
-$color-button-secondary:          #ffda00;
+$color-button-secondary:          yellow;
 $color-button-secondary-hover:    darken($color-button-secondary, 5%);
 $color-button-invert:             mix($color-button-primary, #fff, 10%);
 $color-button-invert-hover:       darken($color-button-invert, 10%);
