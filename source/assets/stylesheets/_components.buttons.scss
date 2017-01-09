@@ -44,7 +44,7 @@ button {
   @include font-size(16);
   line-height: em(24,16);
   text-align: center;
-  color: #fff;
+  color: $color-text;
   font-family: $font-brand-primary;
   font-weight: $bold;
   text-decoration: none;
@@ -61,7 +61,7 @@ button {
   &:focus,
   &:active {
 
-    color: #fff;
+    color: $color-text-strong;
     background-color: $color-button-regular-hover;
     text-decoration: none;
 
@@ -71,7 +71,7 @@ button {
 
 .button--primary {
 
-  color: $color-text-invert;
+  color: $color-text-strong-invert;
   background-color: $color-button-primary;
 
   &:hover,
@@ -87,14 +87,14 @@ button {
 
 .button--secondary {
 
-  color: $color-text-strong;
+  color: $color-text-strong-invert;
   background-color: $color-button-secondary;
 
   &:hover,
   &:focus,
   &:active {
 
-    color: rgba(0,0,0,.9);
+    color: $color-text-strong-invert;
     background-color: $color-button-secondary-hover;
 
   }

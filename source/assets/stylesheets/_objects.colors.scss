@@ -4,148 +4,115 @@
 /*
  * Color cards
  *
- * Color cards are displayed in the style guide.
+ * Color cards are displayed only in the style guide.
  */
 
-.color-card-title {
+.cc-title {
 
-  font-weight: $regular;
-  @include font-size(16);
+  @include font-size(18);
   line-height: 1.5;
-  color: $color-text-weak;
+  font-family: $helvetica;
 
-  text-transform: uppercase;
-  letter-spacing: .0125em;
-
-  margin-bottom: rem(12);
+  margin-bottom: rem(24);
 
 }
 
-.color-card-group {
+.cc-group {
 
-  @include clearfix();
-
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  @include clearfix;
 
 }
 
-[class*="var-color"] {
+.cc {
 
-  padding-right: rem(24);
+  @include list-reset();
 
-  width: 100%;
+  position: relative;
+  display: block;
 
-  @include breakpoint(small) {
+  margin-bottom: rem(24);
+  padding: rem(16);
+  padding-top: rem(96);
+  border: 1px solid #ddd;
 
-    width: 50%;
+  border-radius: $border-radius-small;
 
-  }
-
-  @include breakpoint(extra-large) {
-
-    width: percentage(1/3);
-
-  }
-
-  .color-card {
+  &:after,
+  &:before {
 
     display: block;
 
-    padding-top: rem(64);
-    margin-bottom: rem(24);
-    border: 1px solid #eee;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: rem(80);
 
-    border-radius: $border-radius-small;
+    border-top-left-radius: $border-radius-small;
+    border-top-right-radius: $border-radius-small;
 
-    &:before,
-    &:after {
+    content: "";
 
-      display: block;
+  }
 
-      padding: rem(12);
+  &:before {
 
-      background-color: #fff;
+    // Created with http://www.patternify.com/
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAH0lEQVQoU2NkYGAwZkAFZ5G5jPRRgOYEVDeB3EBjBQBOZwTVugIGyAAAAABJRU5ErkJggg==);
 
-    }
+  }
 
-    &:before {
+  dt {
 
-      padding-bottom: rem(2);
+    margin: 0;
 
-      @include font-size(14);
-      font-family: $helvetica;
-      font-weight: $bold;
+    @include font-size(16);
+    line-height: 1.5;
+    font-family: $helvetica;
 
-      color: $color-text-strong;
+  }
 
-    }
+  dd {
 
-    &:after {
+    margin: 0;
 
-      padding-top: rem(2);
+    @include font-size(13);
+    line-height: 1.4;
+    font-family: $monospace;
+    @include font-feature-settings(normal);
 
-      @include font-size(12);
-      line-height: 1.4;
-      font-family: $monospace;
+  }
 
-      color: $color-text-weak;
+  @include breakpoint(small) {
 
-    }
+    @include gallery(2 of 4);
+
+  }
+
+  @include breakpoint(medium) {
+
+    @include gallery(2 of 6);
 
   }
 
 }
 
-/* This mixin generates the neccessary CSS for displaying values and descriptions */
-@include color-card($color-brand-primary, 'color-brand-primary', 'Brand primary');
-@include color-card($color-brand-secondary, 'color-brand-secondary', 'Brand secondary');
-@include color-card($color-brand-tertiary, 'color-brand-tertiary', 'Brand tertiary');
-@include color-card($color-page-background, 'color-page-background', 'Page background');
-@include color-card($color-text, 'color-text', 'Regular text');
-@include color-card($color-text-heading-1, 'color-text-heading-1', 'Heading 1');
-@include color-card($color-text-heading-2, 'color-text-heading-2', 'Heading 2');
-@include color-card($color-text-heading-3, 'color-text-heading-3', 'Heading 3');
-@include color-card($color-text-heading-4, 'color-text-heading-4', 'Heading 4');
-@include color-card($color-text-paragraph, 'color-text-paragraph', 'Paragraph');
-@include color-card($color-text-weak, 'color-text-weak', 'Weak text');
-@include color-card($color-text-strong, 'color-text-strong', 'Strong text');
-@include color-card($color-text-invert, 'color-text-invert', 'Invert text');
-@include color-card($color-text-weak-invert, 'color-text-weak-invert', 'Weak invert text');
-@include color-card($color-text-strong-invert, 'color-text-strong-invert', 'Strong invert text');
-@include color-card($color-text-link, 'color-text-link', 'Link');
-@include color-card($color-text-link-hover, 'color-text-link-hover', 'Hover link');
-@include color-card($color-text-link-visited, 'color-text-link-visited', 'Visited link');
-@include color-card($color-grey-01, 'color-grey-01', 'Grey 1 (Black 10%)');
-@include color-card($color-grey-02, 'color-grey-02', 'Grey 2 (Black 20%)');
-@include color-card($color-grey-03, 'color-grey-03', 'Grey 3 (Black 30%)');
-@include color-card($color-grey-04, 'color-grey-04', 'Grey 4 (Black 40%)');
-@include color-card($color-grey-05, 'color-grey-05', 'Grey 5 (Black 50%)');
-@include color-card($color-grey-06, 'color-grey-06', 'Grey 6 (Black 60%)');
-@include color-card($color-grey-07, 'color-grey-07', 'Grey 7 (Black 70%)');
-@include color-card($color-grey-08, 'color-grey-08', 'Grey 8 (Black 80%)');
-@include color-card($color-grey-09, 'color-grey-09', 'Grey 9 (Black 90%)');
-@include color-card($color-grey-10, 'color-grey-10', 'Grey 10 (Black 100%)');
-@include color-card($color-message-default, 'color-message-default', 'Message default');
-@include color-card($color-message-success, 'color-message-success', 'Message success');
-@include color-card($color-message-warning, 'color-message-warning', 'Message warning');
-@include color-card($color-message-danger, 'color-message-danger', 'Message danger');
-@include color-card($color-input-regular, 'color-input-regular', 'Input regular');
-@include color-card($color-input-focus, 'color-input-focus', 'Input focused');
-@include color-card($color-input-success, 'color-input-success', 'Input success');
-@include color-card($color-input-error, 'color-input-error', 'Input error');
-@include color-card($color-input-required, 'color-input-required', 'Input required');
-@include color-card($color-input-checkbox, 'color-input-checkbox', 'Checkbox');
-@include color-card($color-input-checkbox-active, 'color-input-checkbox-active', 'Active checkbox');
-@include color-card($color-input-radio, 'color-input-radio', 'Radio');
-@include color-card($color-input-radio-active, 'color-input-radio-active', 'Radio active');
-@include color-card($color-button-regular, 'color-button-regular', 'Regular button');
-@include color-card($color-button-regular-hover, 'color-button-regular-hover', 'Regular button hover');
-@include color-card($color-button-primary, 'color-button-primary', 'Primary button');
-@include color-card($color-button-primary-hover, 'color-button-primary-hover', 'Primary button hover');
-@include color-card($color-button-secondary, 'color-button-secondary', 'Secondary button');
-@include color-card($color-button-secondary-hover, 'color-button-secondary-hover', 'Secondary button hover');
-@include color-card($color-button-invert, 'color-button-invert', 'Invert button');
-@include color-card($color-button-invert-hover, 'color-button-invert-hover', 'Invert button hover');
-@include color-card($color-button-inactive, 'color-button-inactive', 'Inactive button');
+.cc__title {
+
+  font-weight: $bold;
+  font-family: $helvetica;
+
+}
+.cc__variable {
+
+  font-family: $monospace;
+  color: rgba(0,0,0,.6);
+
+  &:after {
+
+    color: rgba(0,0,0,.8);
+    display: block;
+
+  }
+
+}

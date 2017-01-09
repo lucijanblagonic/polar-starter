@@ -75,7 +75,7 @@
       &:focus,
       &:active {
 
-        color: $color-text-link-hover;
+        color: $color-link-hover;
         background-color: transparent;
 
       }
@@ -124,7 +124,7 @@
 
   .nav-page__link {
 
-    border-color: mix($color-text-link, #fff, 10%);
+    border-color: mix($color-link, #fff, 10%);
     background-color: transparent;
     color: $color-text-strong;
     cursor: auto;
@@ -133,7 +133,7 @@
     &:focus,
     &:active {
 
-      border-color: mix($color-text-link, #fff, 10%);
+      border-color: mix($color-link, #fff, 10%);
       background-color: transparent;
       color: $color-text-strong;
 
@@ -149,9 +149,9 @@
   padding: $unit-xs $unit-s;
   border: 1px solid transparent;
 
-  color: $color-text-link;
+  color: $color-link;
   text-decoration: none;
-  background-color: mix($color-text-link, #fff, 10%);
+  background-color: mix($color-link, #fff, 10%);
   border-radius: $border-radius-small;
 
   &:hover,
@@ -159,7 +159,7 @@
   &:active {
 
     color: $color-text-strong-invert;
-    background-color: $color-text-link;
+    background-color: $color-link;
     text-decoration: none;
 
   }

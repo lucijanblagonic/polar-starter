@@ -5,8 +5,8 @@
  */
 
 /* Define basic variables and colors */
-$styleguide-color-main: #3e7dca;
-$styleguide-color-link: #3e7dca;
+$styleguide-color-main: #444;
+$styleguide-color-link: #444;
 $styleguide-color-weak: rgba(0,0,0,.5);
 $styleguide-color-strong: rgba(0,0,0,.9);
 $styleguide-border-radius-small: 3px;
@@ -17,6 +17,7 @@ $styleguide-border-radius-small: 3px;
 
   @include font-size(16);
   line-height: 1.5;
+  color: $styleguide-color-strong;
   font-weight: $bold;
 
 }
@@ -24,7 +25,7 @@ $styleguide-border-radius-small: 3px;
 /* KSS sidebar */
 .kss-sidebar {
 
-  @include breakpoint-proportion(padding);
+  @include container-padding(1);
 
   background-color: tint($styleguide-color-main, 90%);
 
@@ -59,7 +60,9 @@ $styleguide-border-radius-small: 3px;
 /* KSS section */
 .kss-section {
 
-  @include breakpoint-proportion(padding);
+  @include container-padding(1);
+
+  overflow: hidden;
 
   border-bottom: 1px solid rgba(0,0,0,.1);
   background-color: #fff;
@@ -96,7 +99,10 @@ $styleguide-border-radius-small: 3px;
 
     @include font-size(16);
     line-height: 1.5;
+    font-family: $helvetica;
     font-weight: $bold;
+    color: #444;
+    text-transform: none;
 
     @include breakpoint(small) {
 
@@ -134,8 +140,9 @@ $styleguide-border-radius-small: 3px;
 
     @include font-size(16);
     line-height: 1.5;
-    font-weight: $regular;
-    color: rgba(0,0,0,.8);
+    font-weight: $bold;
+    font-family: $helvetica;
+    color: rgba(0,0,0,.9);
 
     border-left: 4px solid #fce053;
     border-radius: $styleguide-border-radius-small;
@@ -146,8 +153,8 @@ $styleguide-border-radius-small: 3px;
 
   .kss-modifier__wrapper {
 
-    @include breakpoint-proportion(padding-top);
-    @include breakpoint-proportion(padding-bottom);
+    // @include breakpoint-proportion(padding-top);
+    // @include breakpoint-proportion(padding-bottom);
 
   }
 
@@ -157,11 +164,11 @@ $styleguide-border-radius-small: 3px;
     margin-bottom: rem(24);
     @include clearfix();
 
-    &:last-child {
+    // &:last-child {
 
-      margin-bottom: 0;
+    //   margin-bottom: 0;
 
-    }
+    // }
 
   }
 
@@ -174,7 +181,8 @@ $styleguide-border-radius-small: 3px;
     @include font-size(14);
     line-height: 1.5;
     font-weight: $bold;
-    color: $color-text;
+    font-family: $helvetica;
+    color: rgba(0,0,0,.9);
 
   }
 
@@ -184,7 +192,9 @@ $styleguide-border-radius-small: 3px;
 
     @include font-size(14);
     line-height: 1.5;
-    color: $styleguide-color-link;
+    font-weight: $regular;
+    font-family: $helvetica;
+    color: rgba(0,0,0,.7);
 
   }
 
@@ -221,6 +231,13 @@ $styleguide-border-radius-small: 3px;
 
 }
 
+/* KSS description */
+.kss-description {
+
+  margin-bottom: rem(24);
+
+}
+
 /* KSS style */
 .kss-style {
 
@@ -240,9 +257,10 @@ $styleguide-border-radius-small: 3px;
   p,
   li {
 
+    font-family: $helvetica;
     @include font-size(16);
     line-height: 1.5;
-    color: rgba(0,0,0,.5);
+    color: #444;
 
     @include breakpoint(small) {
 
@@ -260,8 +278,8 @@ $styleguide-border-radius-small: 3px;
 
   @include list-reset();
 
-  @include breakpoint-proportion(margin-left, negative);
-  @include breakpoint-proportion(margin-right, negative);
+  // @include breakpoint-proportion(margin-left, negative);
+  // @include breakpoint-proportion(margin-right, negative);
 
   ul {
 
@@ -284,8 +302,8 @@ $styleguide-border-radius-small: 3px;
 
     display: block;
     padding: rem(4) rem(10);
-    @include breakpoint-proportion(padding-left);
-    @include breakpoint-proportion(padding-right);
+    // @include breakpoint-proportion(padding-left);
+    // @include breakpoint-proportion(padding-right);
     color: $styleguide-color-link;
 
   }

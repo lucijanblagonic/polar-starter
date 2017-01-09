@@ -50,7 +50,7 @@
   /* Box-model */
   max-width: $container-max-width();
   margin: 0 auto;
-  @include breakpoint-proportion(padding);
+  @include container-padding(1);
 
   /* Misc */
   @include clearfix();

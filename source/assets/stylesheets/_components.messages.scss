@@ -19,6 +19,8 @@
 .message {
 
   padding: $unit-xs $unit-s;
+  margin-bottom: $unit-default;
+
   background-color: $color-message-default;
   border-radius: $border-radius-small;
 

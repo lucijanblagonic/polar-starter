@@ -14,18 +14,31 @@
 <!-- Main -->
 <section class="section section--main" id="main">
 
-  <div class="block block--main">
+  <div class="block">
     <div class="block__container">
 
-      <a class="button" href="#">
-        <span class="button__label">Button</span>
-      </a>
-
-      <img src="assets/images/example.png" alt="Image example">
+      @@include('_message.html', {
+        "message-modifier": "message--default",
+        "message-content": "<strong>Component</strong> example (included with gulp-file-include)"
+      })
 
       @@include('_nav-page.html')
 
       <hr>
+
+      @@include('_message.html', {
+        "message-modifier": "message--default",
+        "message-content": "<strong>Image</strong> example (optimized with gulp-imagemin)"
+      })
+
+      <img src="assets/images/screenshot-colors.png" alt="Image example">
+
+      <hr>
+
+      @@include('_message.html', {
+        "message-modifier": "message--default",
+        "message-content": "<strong>Content</strong> example"
+      })
 
       <div class="post">
 

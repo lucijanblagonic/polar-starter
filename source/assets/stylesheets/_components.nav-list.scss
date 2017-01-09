@@ -21,13 +21,13 @@
 .nav-list__item {
 
   margin: 0;
-  border-bottom: 1px solid $color-grey-01;
+  border-bottom: 1px solid $color-border-weak;
 
   font-family: $font-brand-primary;
 
   &:first-child {
 
-    border-top: 1px solid $color-grey-01;
+    border-top: 1px solid $color-border-weak;
 
   }
 
@@ -35,7 +35,7 @@
 
 .nav-list__item--active {
 
-  background-color: $color-grey-01;
+  background-color: $color-grey-10;
 
   .nav-list__link {
 

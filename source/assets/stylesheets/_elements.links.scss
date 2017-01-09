@@ -16,34 +16,34 @@
 
 a {
 
-  color: $color-text-link;
+  color: $color-link;
   text-decoration: none;
   @include transition-fast();
 
   &:hover {
 
-		color: $color-text-link-hover;
+		color: $color-link-hover;
 		text-decoration: underline;
 
   }
 
   &:focus {
 
-		color: $color-text-link-hover;
+		color: $color-link-hover;
 		text-decoration: underline;
 
   }
 
   &:active {
 
-  	color: $color-text-link-hover;
+  	color: $color-link-hover;
   	text-decoration: none;
 
   }
 
   // &:visited {
 
-		// color: shade($color-text-link, 50%);
+		// color: shade($color-link, 50%);
 
   // }
 

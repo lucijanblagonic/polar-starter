@@ -3,155 +3,419 @@
 
 // Colors
 //
-// Color scheme grouped by context. When adding new colors, don't forget to add a CSS reference in `_objects.colors.scss`.
+// Color variables and values used on the site.
+// Local color variables should be used **only** in _settings.colors.scss.
 //
 // Markup:
-// <h3 class="color-card-title">Brand</h3>
-// <div class="color-card-group">
-// 	<div class="var-color-brand-primary"><span class="color-card"></span></div>
-// 	<div class="var-color-brand-secondary"><span class="color-card"></span></div>
-// 	<div class="var-color-brand-tertiary"><span class="color-card"></span></div>
-// 	<div class="var-color-page-background"><span class="color-card"></span></div>
+// <h3 class="cc-title">Brand</h3>
+// <div class="cc-group">
+// 	<dl class="cc cc--var-color-brand-primary">
+//		<dt class="cc__title">Primary</dt>
+//		<dd class="cc__variable">$color-brand-primary</dd>
+//	</dl>
+// 	<dl class="cc cc--var-color-brand-secondary">
+//		<dt class="cc__title">Secondary</dt>
+//		<dd class="cc__variable">$color-brand-secondary</dd>
+//	</dl>
+// 	<dl class="cc cc--var-color-brand-tertiary">
+//		<dt class="cc__title">Tertiary</dt>
+//		<dd class="cc__variable">$color-brand-tertiary</dd>
+//	</dl>
+// 	<dl class="cc cc--var-color-brand-quaternary">
+//		<dt class="cc__title">Quaternary</dt>
+//		<dd class="cc__variable">$color-brand-quaternary</dd>
+//	</dl>
 // </div>
-// <h3 class="color-card-title">Typography</h3>
-// <div class="color-card-group">
-// 	<div class="var-color-text"><span class="color-card"></span></div>
-// 	<div class="var-color-text-heading-1"><span class="color-card"></span></div>
-// 	<div class="var-color-text-heading-2"><span class="color-card"></span></div>
-// 	<div class="var-color-text-heading-3"><span class="color-card"></span></div>
-// 	<div class="var-color-text-heading-4"><span class="color-card"></span></div>
-// 	<div class="var-color-text-paragraph"><span class="color-card"></span></div>
-// 	<div class="var-color-text-weak"><span class="color-card"></span></div>
-// 	<div class="var-color-text-strong"><span class="color-card"></span></div>
-// 	<div class="var-color-text-invert"><span class="color-card"></span></div>
-// 	<div class="var-color-text-weak-invert"><span class="color-card"></span></div>
-// 	<div class="var-color-text-strong-invert"><span class="color-card"></span></div>
-// 	<div class="var-color-text-link"><span class="color-card"></span></div>
-// 	<div class="var-color-text-link-hover"><span class="color-card"></span></div>
-// 	<div class="var-color-text-link-visited"><span class="color-card"></span></div>
+// <h3 class="cc-title">Text</h3>
+// <div class="cc-group">
+// 	<dl class="cc cc--var-color-text">
+//		<dt class="cc__title">Text</dt>
+//		<dd class="cc__variable">$color-text</dd>
+//	</dl>
+// 	<dl class="cc cc--var-color-text-weak">
+//		<dt class="cc__title">Weak Text</dt>
+//		<dd class="cc__variable">$color-text-weak</dd>
+//	</dl>
+// 	<dl class="cc cc--var-color-text-strong">
+//		<dt class="cc__title">Strong Text</dt>
+//		<dd class="cc__variable">$color-text-strong</dd>
+//	</dl>
+// 	<dl class="cc cc--var-color-text-invert">
+//		<dt class="cc__title">Invert Text</dt>
+//		<dd class="cc__variable">$color-text-invert</dd>
+//	</dl>
+// 	<dl class="cc cc--var-color-text-weak-invert">
+//		<dt class="cc__title">Weak Invert Text</dt>
+//		<dd class="cc__variable">$color-text-weak-invert</dd>
+//	</dl>
+// 	<dl class="cc cc--var-color-text-strong-invert">
+//		<dt class="cc__title">Strong Invert Text</dt>
+//		<dd class="cc__variable">$color-text-strong-invert</dd>
+//	</dl>
 // </div>
-// <h3 class="color-card-title">Shades of grey</h3>
-// <div class="color-card-group">
-// 	<div class="var-color-grey-01"><span class="color-card"></span></div>
-// 	<div class="var-color-grey-02"><span class="color-card"></span></div>
-// 	<div class="var-color-grey-03"><span class="color-card"></span></div>
-// 	<div class="var-color-grey-04"><span class="color-card"></span></div>
-// 	<div class="var-color-grey-05"><span class="color-card"></span></div>
-// 	<div class="var-color-grey-06"><span class="color-card"></span></div>
-// 	<div class="var-color-grey-07"><span class="color-card"></span></div>
-// 	<div class="var-color-grey-08"><span class="color-card"></span></div>
-// 	<div class="var-color-grey-09"><span class="color-card"></span></div>
-// 	<div class="var-color-grey-10"><span class="color-card"></span></div>
+// <h3 class="cc-title">Links</h3>
+// <div class="cc-group">
+// 	<dl class="cc cc--var-color-link">
+//		<dt class="cc__title">Link</dt>
+//		<dd class="cc__variable">$color-link</dd>
+//	</dl>
+// 	<dl class="cc cc--var-color-link-focus">
+//		<dt class="cc__title">Focused Link</dt>
+//		<dd class="cc__variable">$color-link-focus</dd>
+//	</dl>
+// 	<dl class="cc cc--var-color-link-hover">
+//		<dt class="cc__title">Hovered Link</dt>
+//		<dd class="cc__variable">$color-link-hover</dd>
+//	</dl>
+// 	<dl class="cc cc--var-color-link-visited">
+//		<dt class="cc__title">Visited Link</dt>
+//		<dd class="cc__variable">$color-link-visited</dd>
+//	</dl>
 // </div>
-// <h3 class="color-card-title">Messages</h3>
-// <div class="color-card-group">
-// 	<div class="var-color-message-default"><span class="color-card"></span></div>
-// 	<div class="var-color-message-success"><span class="color-card"></span></div>
-// 	<div class="var-color-message-warning"><span class="color-card"></span></div>
-// 	<div class="var-color-message-danger"><span class="color-card"></span></div>
+// <h3 class="cc-title">Alternate links</h3>
+// <div class="cc-group">
+// 	<dl class="cc cc--var-color-link-alt">
+//		<dt class="cc__title">Alternate Link</dt>
+//		<dd class="cc__variable">$color-link-alt</dd>
+//	</dl>
+// 	<dl class="cc cc--var-color-link-alt-focus">
+//		<dt class="cc__title">Alternate focused Link</dt>
+//		<dd class="cc__variable">$color-link-alt-focus</dd>
+//	</dl>
+// 	<dl class="cc cc--var-color-link-alt-hover">
+//		<dt class="cc__title">Alternate hovered Link</dt>
+//		<dd class="cc__variable">$color-link-alt-hover</dd>
+//	</dl>
+// 	<dl class="cc cc--var-color-link-alt-visited">
+//		<dt class="cc__title">Alternate visited Link</dt>
+//		<dd class="cc__variable">$color-link-alt-visited</dd>
+//	</dl>
 // </div>
-// <h3 class="color-card-title">Forms</h3>
-// <div class="color-card-group">
-// 	<div class="var-color-input-regular"><span class="color-card"></span></div>
-// 	<div class="var-color-input-focus"><span class="color-card"></span></div>
-// 	<div class="var-color-input-success"><span class="color-card"></span></div>
-// 	<div class="var-color-input-error"><span class="color-card"></span></div>
-// 	<div class="var-color-input-required"><span class="color-card"></span></div>
-// 	<div class="var-color-input-checkbox"><span class="color-card"></span></div>
-// 	<div class="var-color-input-checkbox-active"><span class="color-card"></span></div>
-// 	<div class="var-color-input-radio"><span class="color-card"></span></div>
-// 	<div class="var-color-input-radio-active"><span class="color-card"></span></div>
+// <h3 class="cc-title">Shades of grey</h3>
+// <div class="cc-group">
+// 	<dl class="cc cc--var-color-grey-10">
+//		<dt class="cc__title">Grey 10%</dt>
+//		<dd class="cc__variable">$color-grey-10</dd>
+//	</dl>
+// 	<dl class="cc cc--var-color-grey-20">
+//		<dt class="cc__title">Grey 20%</dt>
+//		<dd class="cc__variable">$color-grey-20</dd>
+//	</dl>
+// 	<dl class="cc cc--var-color-grey-30">
+//		<dt class="cc__title">Grey 30%</dt>
+//		<dd class="cc__variable">$color-grey-30</dd>
+//	</dl>
+// 	<dl class="cc cc--var-color-grey-40">
+//		<dt class="cc__title">Grey 40%</dt>
+//		<dd class="cc__variable">$color-grey-40</dd>
+//	</dl>
+// 	<dl class="cc cc--var-color-grey-50">
+//		<dt class="cc__title">Grey 50%</dt>
+//		<dd class="cc__variable">$color-grey-50</dd>
+//	</dl>
+// 	<dl class="cc cc--var-color-grey-60">
+//		<dt class="cc__title">Grey 60%</dt>
+//		<dd class="cc__variable">$color-grey-60</dd>
+//	</dl>
+// 	<dl class="cc cc--var-color-grey-70">
+//		<dt class="cc__title">Grey 70%</dt>
+//		<dd class="cc__variable">$color-grey-70</dd>
+//	</dl>
+// 	<dl class="cc cc--var-color-grey-80">
+//		<dt class="cc__title">Grey 80%</dt>
+//		<dd class="cc__variable">$color-grey-80</dd>
+//	</dl>
+// 	<dl class="cc cc--var-color-grey-90">
+//		<dt class="cc__title">Grey 90%</dt>
+//		<dd class="cc__variable">$color-grey-90</dd>
+//	</dl>
+// 	<dl class="cc cc--var-color-grey-100">
+//		<dt class="cc__title">Grey 100%</dt>
+//		<dd class="cc__variable">$color-grey-100</dd>
+//	</dl>
 // </div>
-// <h3 class="color-card-title">Buttons</h3>
-// <div class="color-card-group">
-// 	<div class="var-color-button-regular"><span class="color-card"></span></div>
-// 	<div class="var-color-button-regular-hover"><span class="color-card"></span></div>
-// 	<div class="var-color-button-primary"><span class="color-card"></span></div>
-// 	<div class="var-color-button-primary-hover"><span class="color-card"></span></div>
-// 	<div class="var-color-button-secondary"><span class="color-card"></span></div>
-// 	<div class="var-color-button-secondary-hover"><span class="color-card"></span></div>
-// 	<div class="var-color-button-invert"><span class="color-card"></span></div>
-// 	<div class="var-color-button-invert-hover"><span class="color-card"></span></div>
-// 	<div class="var-color-button-inactive"><span class="color-card"></span></div>
+// <h3 class="cc-title">Borders</h3>
+// <div class="cc-group">
+// 	<dl class="cc cc--var-color-border-weak">
+//		<dt class="cc__title">Weak Border</dt>
+//		<dd class="cc__variable">$color-border-weak</dd>
+//	</dl>
+// 	<dl class="cc cc--var-color-border-normal">
+//		<dt class="cc__title">Normal Border</dt>
+//		<dd class="cc__variable">$color-border-normal</dd>
+//	</dl>
+// 	<dl class="cc cc--var-color-border-strong">
+//		<dt class="cc__title">Strong Border</dt>
+//		<dd class="cc__variable">$color-border-strong</dd>
+//	</dl>
+// </div>
+// <h3 class="cc-title">Buttons</h3>
+// <div class="cc-group">
+// 	<dl class="cc cc--var-color-grey-10">
+//		<dt class="cc__title">Grey 10%</dt>
+//		<dd class="cc__variable">$color-grey-10</dd>
+//	</dl>
+// </div>
+// <h3 class="cc-title">Forms</h3>
+// <div class="cc-group">
+// 	<dl class="cc cc--var-color-input-regular">
+//		<dt class="cc__title">Regular Input</dt>
+//		<dd class="cc__variable">$color-input-regular</dd>
+//	</dl>
+// 	<dl class="cc cc--var-color-input-focus">
+//		<dt class="cc__title">Focus Input</dt>
+//		<dd class="cc__variable">$color-input-focus</dd>
+//	</dl>
+// 	<dl class="cc cc--var-color-input-success">
+//		<dt class="cc__title">Success Input</dt>
+//		<dd class="cc__variable">$color-input-success</dd>
+//	</dl>
+// 	<dl class="cc cc--var-color-input-error">
+//		<dt class="cc__title">Error Input</dt>
+//		<dd class="cc__variable">$color-input-error</dd>
+//	</dl>
+// 	<dl class="cc cc--var-color-input-required">
+//		<dt class="cc__title">Required Input</dt>
+//		<dd class="cc__variable">$color-input-required</dd>
+//	</dl>
+// 	<dl class="cc cc--var-color-input-checkbox">
+//		<dt class="cc__title">Checkbox</dt>
+//		<dd class="cc__variable">$color-input-checkbox</dd>
+//	</dl>
+// 	<dl class="cc cc--var-color-input-checkbox-active">
+//		<dt class="cc__title">Active Checkbox</dt>
+//		<dd class="cc__variable">$color-input-checkbox-active</dd>
+//	</dl>
+// 	<dl class="cc cc--var-color-input-radio">
+//		<dt class="cc__title">Radio</dt>
+//		<dd class="cc__variable">$color-input-radio</dd>
+//	</dl>
+// 	<dl class="cc cc--var-color-input-radio-active">
+//		<dt class="cc__title">Active Radio</dt>
+//		<dd class="cc__variable">$color-input-radio-active</dd>
+//	</dl>
+// </div>
+// <h3 class="cc-title">Messages</h3>
+// <div class="cc-group">
+// 	<dl class="cc cc--var-color-message-default">
+//		<dt class="cc__title">Message</dt>
+//		<dd class="cc__variable">$color-message-default</dd>
+//	</dl>
+// 	<dl class="cc cc--var-color-message-success">
+//		<dt class="cc__title">Success Message</dt>
+//		<dd class="cc__variable">$color-message-success</dd>
+//	</dl>
+// 	<dl class="cc cc--var-color-message-warning">
+//		<dt class="cc__title">Warning Message</dt>
+//		<dd class="cc__variable">$color-message-warning</dd>
+//	</dl>
+// 	<dl class="cc cc--var-color-message-danger">
+//		<dt class="cc__title">Danger Message</dt>
+//		<dd class="cc__variable">$color-message-danger</dd>
+//	</dl>
 // </div>
 //
 // Style guide: 1.colors
 
-/* Local */
-$local-blue:                      blue;
-$local-red:                       red;
-$local-grey:                      gray;
+@mixin cc($cc-variable-value, $cc-variable-class) {
+
+  .cc--var-#{$cc-variable-class} {
+
+    &:after {
+
+    	background-color: $cc-variable-value;
+
+    }
+
+    .cc__variable:after {
+
+			content: "#{$cc-variable-value}";
+
+    }
+
+  }
+
+}
+
+/* Brand locals */
+$local-blue:                   #F06449;
+$local-green:                  #61988E;
+$local-grey:                   #6D7275;
+$local-black:                  #0C0E0F;
 
 /* Brand */
 $color-brand-primary:             $local-blue;
-$color-brand-secondary:           $local-red;
+$color-brand-secondary:           $local-green;
 $color-brand-tertiary:            $local-grey;
+$color-brand-quaternary:          $local-black;
+
+@include cc($color-brand-primary, 'color-brand-primary');
+@include cc($color-brand-secondary, 'color-brand-secondary');
+@include cc($color-brand-tertiary, 'color-brand-tertiary');
+@include cc($color-brand-quaternary, 'color-brand-quaternary');
 
 /* Visuals */
-$color-page-background:           #f3f3f3;
+// $color-page-background:           #f3f3f3;
 
-/* Typography colors */
-$color-text:                      #555;
-$color-text-heading-1:            #222;
-$color-text-heading-2:            #222;
-$color-text-heading-3:            #222;
-$color-text-heading-4:            #222;
-$color-text-paragraph:            #444;
-$color-text-weak:                 #999;
-$color-text-strong:               #222;
-$color-text-invert:               rgba(255,255,255,.7);
-$color-text-weak-invert:          rgba(255,255,255,.5);
+/*
+ * Text
+ */
+
+$color-text:                      rgba($local-black, .75);
+$color-text-weak:                 rgba($local-black,.6);
+$color-text-strong:               rgba($local-black,1);
+$color-text-invert:               rgba(255,255,255,.75);
+$color-text-weak-invert:          rgba(255,255,255,.6);
 $color-text-strong-invert:        rgba(255,255,255,1);
-$color-text-link:                 $color-brand-primary;
-$color-text-link-hover:           darken($color-brand-primary, 20%);
-$color-text-link-visited:         lighten($color-brand-primary, 20%);
 
-/* 10 shades of grey ;) */
-$color-grey-01:                   rgba(0,0,0,.1); // Light
-$color-grey-02:                   rgba(0,0,0,.2);
-$color-grey-03:                   rgba(0,0,0,.3);
-$color-grey-04:                   rgba(0,0,0,.4);
-$color-grey-05:                   rgba(0,0,0,.5);
-$color-grey-06:                   rgba(0,0,0,.6);
-$color-grey-07:                   rgba(0,0,0,.7);
-$color-grey-08:                   rgba(0,0,0,.8);
-$color-grey-09:                   rgba(0,0,0,.9);
-$color-grey-10:                   rgba(0,0,0,1);  // Dark
+@include cc($color-text, 'color-text');
+@include cc($color-text-weak, 'color-text-weak');
+@include cc($color-text-strong, 'color-text-strong');
+@include cc($color-text-invert, 'color-text-invert');
+@include cc($color-text-weak-invert, 'color-text-weak-invert');
+@include cc($color-text-strong-invert, 'color-text-strong-invert');
 
-/* 10 shades of grey ;) */
-$color-border-weak:               #e5e5e5;
-$color-border-normal:             #d5d5d5;
-$color-border-strong:             #c5c5c5;
 
-/* Messages */
+/*
+ * Links
+ */
+
+$color-link:                 $color-brand-primary;
+$color-link-hover:           mix($color-brand-secondary, #000, 90%);
+$color-link-focus:           mix($color-link, #000, 70%);
+$color-link-visited:         mix($color-link, #fff, 50%);
+
+@include cc($color-link, 'color-link');
+@include cc($color-link-focus, 'color-link-focus');
+@include cc($color-link-hover, 'color-link-hover');
+@include cc($color-link-visited, 'color-link-visited');
+
+
+/*
+ * Alternate links
+ */
+
+$color-link-alt:             $color-brand-secondary;
+$color-link-alt-hover:       mix($color-link-alt, #000, 90%);
+$color-link-alt-focus:       mix($color-link-alt, #000, 70%);
+$color-link-alt-visited:     mix($color-link-alt, #fff, 50%);
+
+@include cc($color-link-alt, 'color-link-alt');
+@include cc($color-link-alt-focus, 'color-link-alt-focus');
+@include cc($color-link-alt-hover, 'color-link-alt-hover');
+@include cc($color-link-alt-visited, 'color-link-alt-visited');
+
+
+/*
+ * Shades of grey
+ */
+
+$color-grey-10:                   mix($local-black, #fff, 10%); // Light
+$color-grey-20:                   mix($local-black, #fff, 20%);
+$color-grey-30:                   mix($local-black, #fff, 30%);
+$color-grey-40:                   mix($local-black, #fff, 40%);
+$color-grey-50:                   mix($local-black, #fff, 50%);
+$color-grey-60:                   mix($local-black, #fff, 60%);
+$color-grey-70:                   mix($local-black, #fff, 70%);
+$color-grey-80:                   mix($local-black, #fff, 80%);
+$color-grey-90:                   mix($local-black, #fff, 90%);
+$color-grey-100:                  mix($local-black, #fff, 100%);  // Dark
+
+@include cc($color-grey-10, 'color-grey-10');
+@include cc($color-grey-20, 'color-grey-20');
+@include cc($color-grey-30, 'color-grey-30');
+@include cc($color-grey-40, 'color-grey-40');
+@include cc($color-grey-50, 'color-grey-50');
+@include cc($color-grey-60, 'color-grey-60');
+@include cc($color-grey-70, 'color-grey-70');
+@include cc($color-grey-80, 'color-grey-80');
+@include cc($color-grey-90, 'color-grey-90');
+@include cc($color-grey-100, 'color-grey-100');
+
+
+/*
+ * Border
+ */
+
+$color-border-weak:               rgba($local-grey, .25);
+$color-border-normal:             rgba($local-grey, .5);
+$color-border-strong:             rgba($local-grey, .75);
+
+@include cc($color-border-weak, 'color-border-weak');
+@include cc($color-border-normal, 'color-border-normal');
+@include cc($color-border-strong, 'color-border-strong');
+
+
+/*
+ * Messages
+ */
+
 $color-message-default:           #eeeeee;
 $color-message-success:           #00a664;
 $color-message-warning:           #ffcb05;
 $color-message-danger:            #f04e3e;
 
-/* Forms */
-$color-input-regular:             #ddd;
-$color-input-focus:               #aaa;
-$color-input-success:             #00a664;
-$color-input-error:               #f04e3e;
-$color-input-required:            #ba131a;
-$color-input-checkbox:            #ddd;
-$color-input-checkbox-active:     $color-brand-primary;
-$color-input-radio:               #ddd;
-$color-input-radio-active:        $color-brand-primary;
+@include cc($color-message-default, 'color-message-default');
+@include cc($color-message-success, 'color-message-success');
+@include cc($color-message-warning, 'color-message-warning');
+@include cc($color-message-danger, 'color-message-danger');
 
-/* Buttons */
-$color-button-regular:            $color-brand-tertiary;
-$color-button-regular-hover:      darken($color-button-regular, 20%);
-$color-button-primary:            blue;
-$color-button-primary-hover:      darken($color-button-primary, 10%);
-$color-button-secondary:          yellow;
+
+/*
+ * Forms
+ */
+
+$color-input-regular:             mix($local-black, #fff, 25%);
+$color-input-focus:               mix($local-black, #fff, 50%);
+$color-input-success:             #00a664;
+$color-input-error:               $color-message-danger;
+$color-input-required:            mix($color-message-danger, #000, 75%);
+$color-input-checkbox:            mix($local-black, #fff, 25%);
+$color-input-checkbox-active:     $color-brand-secondary;
+$color-input-radio:               mix($local-black, #fff, 25%);
+$color-input-radio-active:        $color-brand-secondary;
+
+@include cc($color-input-regular, 'color-input-regular');
+@include cc($color-input-focus, 'color-input-focus');
+@include cc($color-input-success, 'color-input-success');
+@include cc($color-input-error, 'color-input-error');
+@include cc($color-input-required, 'color-input-required');
+@include cc($color-input-checkbox, 'color-input-checkbox');
+@include cc($color-input-checkbox-active, 'color-input-checkbox-active');
+@include cc($color-input-radio, 'color-input-radio');
+@include cc($color-input-radio-active, 'color-input-radio-active');
+
+
+/*
+ * Buttons
+ */
+
+$color-button-regular:            mix($color-brand-tertiary, #fff, 20%);
+$color-button-regular-hover:      darken($color-button-regular, 10%);
+$color-button-primary:            $color-brand-primary;
+$color-button-primary-hover:      darken($color-button-primary, 5%);
+$color-button-secondary:          $color-brand-secondary;
 $color-button-secondary-hover:    darken($color-button-secondary, 5%);
-$color-button-invert:             mix($color-button-primary, #fff, 10%);
-$color-button-invert-hover:       darken($color-button-invert, 10%);
+$color-button-invert:             #fff;
+$color-button-invert-hover:       mix($color-button-invert, #000, 90%);
 $color-button-inactive:           #eeeeee;
 
-/* Specific colors */
+
+/*
+ * Helper colors
+ */
+
+$color-text-heading-1:            $color-text-strong;
+$color-text-heading-2:            $color-text-strong;
+$color-text-heading-3:            $color-text-strong;
+$color-text-heading-4:            $color-text-strong;
+$color-text-paragraph:            $color-text;
+
+
+/*
+ * Explicit colors
+ */
+
 $color-explicit-red:              #ed1c24;
 $color-explicit-green:            #00a651;
 $color-explicit-blue:             #034ea2;
