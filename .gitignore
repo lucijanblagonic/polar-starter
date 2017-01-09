@@ -4,5 +4,3 @@ config.codekit
 *.log
 *.scssc
 node_modules
-build
-styleguide

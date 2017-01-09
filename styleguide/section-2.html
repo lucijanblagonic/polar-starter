@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<!--[if lte IE 6]>            <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IEMobile 7]>          <html class="no-js iem7" lang="en"> <![endif]-->
+<!--[if (IE 7)&(!IEMobile)]>  <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>                <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>KSS Style Guide</title>
+
+  <meta name="description" content="">
+  <meta name="generator" content="kss-node">
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="public/prism.css">
+  <link rel="stylesheet" href="../build/assets/stylesheets/style.css">
+
+
+</head>
+<body id="kss-node">
+
+<div class="kss-sidebar kss-style">
+  <header class="kss-header">
+    <h1 class="kss-doc-title">KSS Style Guide</h1>
+  </header>
+  <nav class="kss-nav">
+    <ul class="kss-nav__menu">
+      <li class="kss-nav__menu-item">
+        <a href="./">
+          <span class="kss-nav__ref">0</span
+          ><span class="kss-nav__name">Overview</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-1.html">
+          <span class="kss-nav__ref">1</span
+          ><span class="kss-nav__name">Settings</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-2.html">
+          <span class="kss-nav__ref">2</span
+          ><span class="kss-nav__name">Tools</span>
+        </a>
+        <ul class="kss-nav__menu-child">
+            <li class="kss-nav__menu-item">
+              <a href="section-2.html#kssref-2-clearfix">
+                <span class="kss-nav__ref ">2.1</span
+                ><span class="kss-nav__name">Clearfix</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-2.html#kssref-2-container-padding">
+                <span class="kss-nav__ref ">2.2</span
+                ><span class="kss-nav__name">Container padding</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-2.html#kssref-2-hide-text">
+                <span class="kss-nav__ref ">2.3</span
+                ><span class="kss-nav__name">Hide text</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-2.html#kssref-2-list-reset">
+                <span class="kss-nav__ref ">2.4</span
+                ><span class="kss-nav__name">List reset</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-2.html#kssref-2-show-text">
+                <span class="kss-nav__ref ">2.5</span
+                ><span class="kss-nav__name">Show text</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-2.html#kssref-2-transition-fast">
+                <span class="kss-nav__ref ">2.6</span
+                ><span class="kss-nav__name">Icon font</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-2.html#kssref-2-transition-fast">
+                <span class="kss-nav__ref ">2.6</span
+                ><span class="kss-nav__name">Transition fast</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-2.html#kssref-2-transition-normal">
+                <span class="kss-nav__ref ">2.7</span
+                ><span class="kss-nav__name">Transition normal</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-2.html#kssref-2-transition-slow">
+                <span class="kss-nav__ref ">2.8</span
+                ><span class="kss-nav__name">Transition slow</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-2.html#kssref-2-visually-hidden">
+                <span class="kss-nav__ref ">2.9</span
+                ><span class="kss-nav__name">Visually Hidden</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-2.html#kssref-2-visually-visible">
+                <span class="kss-nav__ref ">2.10</span
+                ><span class="kss-nav__name">Visually Visible</span>
+              </a>
+            </li>
+        </ul>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-3.html">
+          <span class="kss-nav__ref">3</span
+          ><span class="kss-nav__name">Generic</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-4.html">
+          <span class="kss-nav__ref">4</span
+          ><span class="kss-nav__name">Elements</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-5.html">
+          <span class="kss-nav__ref">5</span
+          ><span class="kss-nav__name">Objects</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-6.html">
+          <span class="kss-nav__ref">6</span
+          ><span class="kss-nav__name">Components</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-7.html">
+          <span class="kss-nav__ref">7</span
+          ><span class="kss-nav__name">Trumps</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+<article role="main" class="kss-main">
+
+      <div     id="kssref-2" class="kss-section kss-section--depth-1">
+
+    <div class="kss-style">
+      <h1 class="kss-title kss-title--level-1">
+        <a class="kss-title__permalink" href="#kssref-2">
+          <span class="kss-title__ref">
+              2
+            <span class="kss-title__permalink-hash">
+                #permalink
+            </span>
+          </span>
+          Tools
+        </a>
+      </h1>
+
+
+      <div class="kss-description">
+        <p>Default mixins and functions</p>
+
+      </div>
+    </div>
+
+
+      </div>
+      <section id="kssref-2-clearfix" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-2-clearfix">
+          <span class="kss-title__ref">
+              2.1
+            <span class="kss-title__permalink-hash">
+                #2.clearfix
+            </span>
+          </span>
+          Clearfix
+        </a>
+      </h2>
+
+
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          @include clearfix();
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint lang-html"><code data-language="html">@include clearfix();</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-2-container-padding" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-2-container-padding">
+          <span class="kss-title__ref">
+              2.2
+            <span class="kss-title__permalink-hash">
+                #2.container-padding
+            </span>
+          </span>
+          Container padding
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>Add container padding accross resolutions with the ability to set multiplicator for top and bottom padding.</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          @include container-padding(1.5);
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint lang-html"><code data-language="html">@include container-padding(1.5);</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-2-hide-text" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-2-hide-text">
+          <span class="kss-title__ref">
+              2.3
+            <span class="kss-title__permalink-hash">
+                #2.hide-text
+            </span>
+          </span>
+          Hide text
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>Moves text off screen for background image purposes.</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          @include hide-text;
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint lang-html"><code data-language="html">@include hide-text;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-2-list-reset" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-2-list-reset">
+          <span class="kss-title__ref">
+              2.4
+            <span class="kss-title__permalink-hash">
+                #2.list-reset
+            </span>
+          </span>
+          List reset
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>Resets basic list styles (margin, padding etc.).</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          @include list-reset;
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint lang-html"><code data-language="html">@include list-reset;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-2-show-text" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-2-show-text">
+          <span class="kss-title__ref">
+              2.5
+            <span class="kss-title__permalink-hash">
+                #2.show-text
+            </span>
+          </span>
+          Show text
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>Resets hide-text mixin.</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          @include show-text;
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint lang-html"><code data-language="html">@include show-text;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-2-transition-fast" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-2-transition-fast">
+          <span class="kss-title__ref">
+              2.6
+            <span class="kss-title__permalink-hash">
+                #2.transition-fast
+            </span>
+          </span>
+          Icon font
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>Apply icon fonts to HTML elements. Example usage when placing icons with :before or :after</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          @include transition-fast;
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint lang-html"><code data-language="html">@include transition-fast;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-2-transition-fast" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-2-transition-fast">
+          <span class="kss-title__ref">
+              2.6
+            <span class="kss-title__permalink-hash">
+                #2.transition-fast
+            </span>
+          </span>
+          Transition fast
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>Uniform fast transition</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          @include transition-fast;
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint lang-html"><code data-language="html">@include transition-fast;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-2-transition-normal" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-2-transition-normal">
+          <span class="kss-title__ref">
+              2.7
+            <span class="kss-title__permalink-hash">
+                #2.transition-normal
+            </span>
+          </span>
+          Transition normal
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>Uniform normal transition</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          @include transition-normal;
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint lang-html"><code data-language="html">@include transition-normal;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-2-transition-slow" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-2-transition-slow">
+          <span class="kss-title__ref">
+              2.8
+            <span class="kss-title__permalink-hash">
+                #2.transition-slow
+            </span>
+          </span>
+          Transition slow
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>Uniform slow transition</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          @include transition-slow;
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint lang-html"><code data-language="html">@include transition-slow;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-2-visually-hidden" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-2-visually-hidden">
+          <span class="kss-title__ref">
+              2.9
+            <span class="kss-title__permalink-hash">
+                #2.visually-hidden
+            </span>
+          </span>
+          Visually Hidden
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>Hides element visually but keeps it visible for screen readers.
+More information <a href="http://webaim.org/techniques/css/invisiblecontent/">http://webaim.org/techniques/css/invisiblecontent/</a></p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          @include visually-hidden;
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint lang-html"><code data-language="html">@include visually-hidden;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-2-visually-visible" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-2-visually-visible">
+          <span class="kss-title__ref">
+              2.10
+            <span class="kss-title__permalink-hash">
+                #2.visually-visible
+            </span>
+          </span>
+          Visually Visible
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>Resets visually hidden element.</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          @include visually-visible;
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint lang-html"><code data-language="html">@include visually-visible;</code></pre>
+      </div>
+
+      </section>
+</article>
+
+<!-- SCRIPTS -->
+<script src="public/kss.js"></script>
+<script src="public/prism.js"></script>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="../build/assets/scripts/all.js"></script>
+
+
+<!-- Automatically generated using <a href="https://github.com/kss-node/kss-node">kss-node</a>. -->
+
+</body>
+</html>
