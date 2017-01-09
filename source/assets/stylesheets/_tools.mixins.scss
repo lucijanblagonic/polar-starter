@@ -1,6 +1,13 @@
 /* =Custom mixins
 ===================================================== */
 
+// Clearfix
+//
+// Markup:
+// @include clearfix();
+//
+// Style guide: 2.clearfix
+
 // Clearfix (IE8+)
 @mixin clearfix() {
   &:before,
@@ -14,9 +21,16 @@
   *zoom: 1;
 }
 
-// Read by screen readers
-// http://webaim.org/techniques/css/invisiblecontent/
-// Hidden
+// Visually Hidden
+//
+// Hides element visually but keeps it visible for screen readers.
+// More information http://webaim.org/techniques/css/invisiblecontent/
+//
+// Markup:
+// @include visually-hidden;
+//
+// Style guide: 2.visually-hidden
+
 @mixin visually-hidden {
   position: absolute;
   left: -10000px;
@@ -26,7 +40,15 @@
   overflow: hidden;
 }
 
-// Visible
+// Visually Visible
+//
+// Resets visually hidden element.
+//
+// Markup:
+// @include visually-visible;
+//
+// Style guide: 2.visually-visible
+
 @mixin visually-visible {
   position: relative;
   left: auto;
@@ -36,6 +58,14 @@
 }
 
 // Hide text
+//
+// Moves text off screen for background image purposes.
+//
+// Markup:
+// @include hide-text;
+//
+// Style guide: 2.hide-text
+
 @mixin hide-text {
   text-indent: 100%;
   white-space: nowrap;
@@ -43,6 +73,14 @@
 }
 
 // Show text
+//
+// Resets hide-text mixin.
+//
+// Markup:
+// @include show-text;
+//
+// Style guide: 2.show-text
+
 @mixin show-text {
   text-indent: 0;
   white-space: normal;
@@ -70,9 +108,73 @@
   font-size: ($sizeValue / 16) + rem;
 }
 
+// List reset
+//
+// Resets basic list styles (margin, padding etc.).
+//
+// Markup:
+// @include list-reset;
+//
+// Style guide: 2.list-reset
+
+// List reset
+@mixin list-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+// Transition fast
+//
+// Uniform fast transition
+//
+// Markup:
+// @include transition-fast;
+//
+// Style guide: 2.transition-fast
+
+@mixin transition-fast {
+  transition: all .15s ease;
+}
+
+// Transition normal
+//
+// Uniform normal transition
+//
+// Markup:
+// @include transition-normal;
+//
+// Style guide: 2.transition-normal
+
+@mixin transition-normal {
+  transition: all .3s ease;
+}
+
+// Transition slow
+//
+// Uniform slow transition
+//
+// Markup:
+// @include transition-slow;
+//
+// Style guide: 2.transition-slow
+
+@mixin transition-slow {
+  transition: all .45s ease;
+}
+
 // Icon font
+//
+// Apply icon fonts to HTML elements. Example usage when placing icons with :before or :after
+//
+// Markup:
+// @include icon-font('streamline')
+//
+// Style guide: 2.transition-fast
+
 @mixin icon-font($fontName) {
-  font-family: $fontName;
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: $fontName !important;
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -85,92 +187,28 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-// List reset
-@mixin list-reset {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
+// Container padding
+//
+// Add container padding accross resolutions with the ability to set multiplicator for top and bottom padding.
+//
+// Markup:
+// @include container-padding(1.5);
+//
+// Style guide: 2.container-padding
 
-// Transition: None
-@mixin transition-none {
-  -webkit-transition: none;
-  transition: none;
-}
+@mixin container-padding($proportion) {
 
-// Transition: Fast
-@mixin transition-fast {
-  @include transition-property(all);
-  @include transition-duration(.1s);
-  @include transition-timing-function(ease-in);
-}
+  padding: ($container-unit-small * $proportion) $container-unit-small;
 
-// Transition: Normal
-@mixin transition-normal {
-  @include transition-property(all);
-  @include transition-duration(.3s);
-  @include transition-timing-function(ease-in);
-}
+  @include breakpoint(small) {
 
-// Transition: Slow
-@mixin transition-slow {
-  @include transition-property(all);
-  @include transition-duration(.6s);
-  @include transition-timing-function(ease-in);
-}
-
-// Proportion
-@mixin breakpoint-proportion($property-name, $negative-value: 'none') {
-
-  @if $negative-value == 'negative' {
-
-    #{$property-name}: -($container-unit-small);
-
-    @include breakpoint(small) {
-
-      #{$property-name}: -($container-unit-medium);
-
-    }
-
-    @include breakpoint(medium) {
-
-      #{$property-name}: -($container-unit-large);
-
-    }
-
-  } @else {
-
-    #{$property-name}: $container-unit-small;
-
-    @include breakpoint(small) {
-
-      #{$property-name}: $container-unit-medium;
-
-    }
-
-    @include breakpoint(medium) {
-
-      #{$property-name}: $container-unit-large;
-
-    }
+    padding: ($container-unit-medium * $proportion) $container-unit-medium;
 
   }
 
-}
+  @include breakpoint(medium) {
 
-// Color card
-@mixin color-card($color-var-value, $color-var-name, $color-var-title) {
-
-  .var-#{$color-var-name} {
-
-    .color-card {
-
-      background-color: $color-var-value;
-
-      &:before { content: "#{$color-var-title}"; }
-      &:after  { content: "$#{$color-var-name}: #{$color-var-value};" }
-
-    }
+    padding: ($container-unit-large * $proportion) $container-unit-large;
 
   }
 
