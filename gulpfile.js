@@ -83,7 +83,15 @@ gulp.task('stylesheets', function() {
 
 // Start scripts task
 gulp.task('scripts', function() {
-  gulp.src(['source/assets/scripts/modernizr.js', 'source/assets/scripts/main.js'])
+  gulp.src([
+      'source/assets/scripts/modernizr.js',           // Modernizr
+      'source/assets/scripts/jquery.fitvids.js',      // Responsive media
+      'source/assets/scripts/jquery.matchHeight.js',  // Match height of elements
+      'source/assets/scripts/ofi.js',                 // Object fit polyfill
+      'source/assets/scripts/tota11y.js',             // Test accessibility
+      'source/assets/scripts/svgxuse.js',             // External SVG linking
+      'source/assets/scripts/main.js'                 // Project realted JS
+    ])
     .pipe(concat('all.js'))
     .pipe(uglify())
     .pipe(gulp.dest('build/assets/scripts'));
@@ -93,7 +101,19 @@ gulp.task('scripts', function() {
 gulp.task('images', function() {
 
   gulp.src('source/assets/images/**')
-    .pipe(imagemin())
+    .pipe(imagemin([
+      imagemin.svgo({
+        plugins: [
+          { removeUselessDefs: false },
+          { removeViewBox: false },
+          { cleanupIDs: false },
+          { removeUselessStrokeAndFill: false }
+       ]
+     }),
+     imagemin.gifsicle(),
+     imagemin.jpegtran(),
+     imagemin.optipng()
+    ]))
     .pipe(gulp.dest('build/assets/images'));
 
 });
