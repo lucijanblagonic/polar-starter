@@ -5,6 +5,14 @@
 //
 // Style guide: 4.lists
 
+ul,
+ol,
+dl {
+
+  text-align: left;
+
+}
+
 // Ordered
 //
 // List examples
@@ -40,6 +48,7 @@ ol {
 li {
 
   margin-top: rem(4);
+  color: $color-text-paragraph;
 
   &:first-child {
 
