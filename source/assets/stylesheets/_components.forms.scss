@@ -5,25 +5,71 @@
  * Radio + Checkbox
  */
 
-.radio-container,
-.checkbox-container {
+.radio,
+.checkbox {
 
   position: relative;
 
-  display: block;
-  padding: rem(4) 0 rem(6) rem(24);
+  text-align: left;
 
-  font-family: $font-brand-primary;
-  @include font-size(16);
-  line-height: 1.5;
-  color: $color-text;
+  label {
 
-  cursor: pointer;
+    display: block;
+    cursor: pointer;
+    padding: rem(10) rem(4) rem(10) rem(32);
+
+    font-family: $font-brand-primary;
+    font-size: ms(0, 16px);
+    line-height: 24px;
+    color: $color-text;
+
+    @include transition-fast();
+
+  }
+
+  label:before {
+
+
+    position: absolute;
+    top: rem(10);
+    left: 0;
+
+    width: rem(20);
+    height: rem(20);
+    border: rem(2) solid $color-input-regular;
+
+    border-radius: $border-radius-normal;
+
+    content: "";
+    @include transition-fast();
+
+  }
 
   &.is-inline {
 
     display: inline-block;
     margin-right: rem(8);
+
+  }
+
+  input[type="radio"]:disabled + label,
+  input[type="radio"]:disabled:hover + label {
+
+    color: $color-text-weak;
+    border-color: $color-border-weak;
+    cursor: auto;
+    opacity: .5;
+
+  }
+
+  @include breakpoint(small) {
+
+    label {
+
+      font-size: ms(0, 18px);
+      line-height: 24px;
+
+    }
 
   }
 
@@ -34,26 +80,45 @@
 // Checkbox styles
 //
 // Markup:
-// <label class="checkbox-container">
-//   Checkbox Label
-//   <input type="checkbox" checked>
-// </label>
-// <label class="checkbox-container">
-//   Checkbox Label
-//   <input type="checkbox">
-// </label>
-// <label class="checkbox-container">
-//   Checkbox Label
-//   <input type="checkbox">
-// </label>
+// <div class="checkbox">
+//   <input type="checkbox" id="checkbox-1" checked>
+//   <label for="checkbox-1">Checkbox Label</label>
+// </div>
+// <div class="checkbox">
+//   <input type="checkbox" id="checkbox-2">
+//   <label for="checkbox-2">Checkbox Label</label>
+// </div>
+// <div class="checkbox">
+//   <input type="checkbox" id="checkbox-3">
+//   <label for="checkbox-3">Checkbox Label</label>
+// </div>
 //
 // Style guide: 6.forms.checkbox
 
-.checkbox-container > input[type="checkbox"] {
+.checkbox {
 
-  position: absolute;
-  top: rem(10);
-  left: 0;
+  input[type="checkbox"] {
+
+    position: absolute;
+
+    opacity: 0;
+
+  }
+
+  label:before {}
+
+  input[type="checkbox"]:checked + label:before {
+
+    border-color: transparent;
+    background: $color-input-checkbox-active;
+
+  }
+
+  input[type="checkbox"]:focus + label:before {
+
+    border-color: rgba(0,0,0,.25);
+
+  }
 
 }
 
@@ -62,25 +127,52 @@
 // Radio styles
 //
 // Markup:
-// <label class="radio-container">
-//   Radio Label
-//   <input type="radio" name="group" checked>
-// </label>
-// <label class="radio-container">
-//   Radio Label
-//   <input type="radio" name="group">
-// </label>
-// <label class="radio-container">
-//   Radio Label
-//   <input type="radio" name="group">
-// </label>
+// <div class="radio">
+//   <input type="radio" id="radio-1" name="group" checked>
+//   <label for="radio-1">Radio Label</label>
+// </div>
+// <div class="radio">
+//   <input type="radio" id="radio-2" name="group">
+//   <label for="radio-2">Radio Label</label>
+// </div>
+// <div class="radio">
+//   <input type="radio" id="radio-3" name="group">
+//   <label for="radio-3">Radio Label</label>
+// </div>
 //
 // Style guide: 6.forms.radio
 
-.radio-container > input[type="radio"] {
+.radio {
 
-  position: absolute;
-  top: rem(10);
-  left: 0;
+  input[type="radio"] {
+
+    position: absolute;
+
+    opacity: 0;
+
+  }
+
+  label:before {
+
+    border-radius: 50%;
+
+  }
+
+  input[type="radio"]:checked + label:before {
+
+    border: 6px solid $color-input-radio;
+
+    width: rem(12);
+    height: rem(12);
+    background: $color-input-radio-active;
+
+  }
+
+  input[type="radio"]:hover + label:before,
+  input[type="radio"]:focus + label:before {
+
+    border-color: rgba(0,0,0,.25);
+
+  }
 
 }

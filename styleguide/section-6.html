@@ -74,7 +74,7 @@
               </a>
             </li>
             <li class="kss-nav__menu-item">
-              <a href="section-6.html#kssref-6-form-field">
+              <a href="section-6.html#kssref-6-field">
                 <span class="kss-nav__ref ">6.2</span
                 ><span class="kss-nav__name">Form field</span>
               </a>
@@ -395,15 +395,15 @@
       </div>
 
       </section>
-      <section id="kssref-6-form-field" class="kss-section kss-section--depth-2">
+      <section id="kssref-6-field" class="kss-section kss-section--depth-2">
 
     <div class="kss-style">
       <h2 class="kss-title kss-title--level-2">
-        <a class="kss-title__permalink" href="#kssref-6-form-field">
+        <a class="kss-title__permalink" href="#kssref-6-field">
           <span class="kss-title__ref">
               6.2
             <span class="kss-title__permalink-hash">
-                #6.form-field
+                #6.field
             </span>
           </span>
           Form field
@@ -422,9 +422,9 @@
           Example
         </div>
         <div class="kss-modifier__example">
-          <div class="form-field">
-  <label class="form-field__label" for="input-name">Label name</label>
-  <div class="form-field__group">
+          <div class="field">
+  <label class="field__label" for="input-name">Label name</label>
+  <div class="field__group">
     <input type="text" value="Value example" placeholder="Enter value...">
   </div>
 </div>
@@ -432,9 +432,9 @@
       </div>
 
       <div class="kss-markup kss-style">
-        <pre class="prettyprint lang-html"><code data-language="html">&lt;div class=&quot;form-field&quot;&gt;
-  &lt;label class=&quot;form-field__label&quot; for=&quot;input-name&quot;&gt;Label name&lt;/label&gt;
-  &lt;div class=&quot;form-field__group&quot;&gt;
+        <pre class="prettyprint lang-html"><code data-language="html">&lt;div class=&quot;field&quot;&gt;
+  &lt;label class=&quot;field__label&quot; for=&quot;input-name&quot;&gt;Label name&lt;/label&gt;
+  &lt;div class=&quot;field__group&quot;&gt;
     &lt;input type=&quot;text&quot; value=&quot;Value example&quot; placeholder=&quot;Enter value...&quot;&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
@@ -468,34 +468,34 @@
           Example
         </div>
         <div class="kss-modifier__example">
-          <label class="checkbox-container">
-  Checkbox Label
-  <input type="checkbox" checked>
-</label>
-<label class="checkbox-container">
-  Checkbox Label
-  <input type="checkbox">
-</label>
-<label class="checkbox-container">
-  Checkbox Label
-  <input type="checkbox">
-</label>
+          <div class="checkbox">
+  <input type="checkbox" id="checkbox-1" checked>
+  <label for="checkbox-1">Checkbox Label</label>
+</div>
+<div class="checkbox">
+  <input type="checkbox" id="checkbox-2">
+  <label for="checkbox-2">Checkbox Label</label>
+</div>
+<div class="checkbox">
+  <input type="checkbox" id="checkbox-3">
+  <label for="checkbox-3">Checkbox Label</label>
+</div>
         </div>
       </div>
 
       <div class="kss-markup kss-style">
-        <pre class="prettyprint lang-html"><code data-language="html">&lt;label class=&quot;checkbox-container&quot;&gt;
-  Checkbox Label
-  &lt;input type=&quot;checkbox&quot; checked&gt;
-&lt;/label&gt;
-&lt;label class=&quot;checkbox-container&quot;&gt;
-  Checkbox Label
-  &lt;input type=&quot;checkbox&quot;&gt;
-&lt;/label&gt;
-&lt;label class=&quot;checkbox-container&quot;&gt;
-  Checkbox Label
-  &lt;input type=&quot;checkbox&quot;&gt;
-&lt;/label&gt;</code></pre>
+        <pre class="prettyprint lang-html"><code data-language="html">&lt;div class=&quot;checkbox&quot;&gt;
+  &lt;input type=&quot;checkbox&quot; id=&quot;checkbox-1&quot; checked&gt;
+  &lt;label for=&quot;checkbox-1&quot;&gt;Checkbox Label&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;checkbox&quot;&gt;
+  &lt;input type=&quot;checkbox&quot; id=&quot;checkbox-2&quot;&gt;
+  &lt;label for=&quot;checkbox-2&quot;&gt;Checkbox Label&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;checkbox&quot;&gt;
+  &lt;input type=&quot;checkbox&quot; id=&quot;checkbox-3&quot;&gt;
+  &lt;label for=&quot;checkbox-3&quot;&gt;Checkbox Label&lt;/label&gt;
+&lt;/div&gt;</code></pre>
       </div>
 
       </section>
@@ -526,34 +526,34 @@
           Example
         </div>
         <div class="kss-modifier__example">
-          <label class="radio-container">
-  Radio Label
-  <input type="radio" name="group" checked>
-</label>
-<label class="radio-container">
-  Radio Label
-  <input type="radio" name="group">
-</label>
-<label class="radio-container">
-  Radio Label
-  <input type="radio" name="group">
-</label>
+          <div class="radio">
+  <input type="radio" id="radio-1" name="group" checked>
+  <label for="radio-1">Radio Label</label>
+</div>
+<div class="radio">
+  <input type="radio" id="radio-2" name="group">
+  <label for="radio-2">Radio Label</label>
+</div>
+<div class="radio">
+  <input type="radio" id="radio-3" name="group">
+  <label for="radio-3">Radio Label</label>
+</div>
         </div>
       </div>
 
       <div class="kss-markup kss-style">
-        <pre class="prettyprint lang-html"><code data-language="html">&lt;label class=&quot;radio-container&quot;&gt;
-  Radio Label
-  &lt;input type=&quot;radio&quot; name=&quot;group&quot; checked&gt;
-&lt;/label&gt;
-&lt;label class=&quot;radio-container&quot;&gt;
-  Radio Label
-  &lt;input type=&quot;radio&quot; name=&quot;group&quot;&gt;
-&lt;/label&gt;
-&lt;label class=&quot;radio-container&quot;&gt;
-  Radio Label
-  &lt;input type=&quot;radio&quot; name=&quot;group&quot;&gt;
-&lt;/label&gt;</code></pre>
+        <pre class="prettyprint lang-html"><code data-language="html">&lt;div class=&quot;radio&quot;&gt;
+  &lt;input type=&quot;radio&quot; id=&quot;radio-1&quot; name=&quot;group&quot; checked&gt;
+  &lt;label for=&quot;radio-1&quot;&gt;Radio Label&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;radio&quot;&gt;
+  &lt;input type=&quot;radio&quot; id=&quot;radio-2&quot; name=&quot;group&quot;&gt;
+  &lt;label for=&quot;radio-2&quot;&gt;Radio Label&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;radio&quot;&gt;
+  &lt;input type=&quot;radio&quot; id=&quot;radio-3&quot; name=&quot;group&quot;&gt;
+  &lt;label for=&quot;radio-3&quot;&gt;Radio Label&lt;/label&gt;
+&lt;/div&gt;</code></pre>
       </div>
 
       </section>
@@ -792,24 +792,24 @@
           Example
         </div>
         <div class="kss-modifier__example">
-          <div class="nav-page">
+          <div class="nav page-nav">
 
-	<p class="nav-page__summary">Page <strong>2 of 5</strong></p>
+	<p class="nav__summary">Page <strong>2 of 5</strong></p>
 
-	<ul class="nav-page__list">
-		<li class="nav-page__item nav-page__item--prev">
-			<a class="nav-page__link" href="#">
-				<span class="nav-page__label">Previous</span>
+	<ul class="nav__items">
+		<li class="nav__item nav__item--prev">
+			<a class="nav__link" href="#">
+				<span class="nav__label">Previous</span>
 			</a>
 		</li>
-		<li class="nav-page__item"><a class="nav-page__link" href="#">1</a></li>
-		<li class="nav-page__item nav-page__item--active"><a class="nav-page__link" href="#">2</a></li>
-		<li class="nav-page__item"><a class="nav-page__link" href="#">3</a></li>
-		<li class="nav-page__item"><a class="nav-page__link" href="#">4</a></li>
-		<li class="nav-page__item"><a class="nav-page__link" href="#">5</a></li>
-		<li class="nav-page__item nav-page__item--next">
-			<a class="nav-page__link" href="#">
-				<span class="nav-page__label">Next</span>
+		<li class="nav__item"><a class="nav__link" href="#">1</a></li>
+		<li class="nav__item nav__item--active"><a class="nav__link" href="#">2</a></li>
+		<li class="nav__item"><a class="nav__link" href="#">3</a></li>
+		<li class="nav__item"><a class="nav__link" href="#">4</a></li>
+		<li class="nav__item"><a class="nav__link" href="#">5</a></li>
+		<li class="nav__item nav__item--next">
+			<a class="nav__link" href="#">
+				<span class="nav__label">Next</span>
 			</a>
 		</li>
 	</ul>
@@ -819,24 +819,24 @@
       </div>
 
       <div class="kss-markup kss-style">
-        <pre class="prettyprint lang-html"><code data-language="html">&lt;div class=&quot;nav-page&quot;&gt;
+        <pre class="prettyprint lang-html"><code data-language="html">&lt;div class=&quot;nav page-nav&quot;&gt;
 
-	&lt;p class=&quot;nav-page__summary&quot;&gt;Page &lt;strong&gt;2 of 5&lt;/strong&gt;&lt;/p&gt;
+	&lt;p class=&quot;nav__summary&quot;&gt;Page &lt;strong&gt;2 of 5&lt;/strong&gt;&lt;/p&gt;
 
-	&lt;ul class=&quot;nav-page__list&quot;&gt;
-		&lt;li class=&quot;nav-page__item nav-page__item--prev&quot;&gt;
-			&lt;a class=&quot;nav-page__link&quot; href=&quot;#&quot;&gt;
-				&lt;span class=&quot;nav-page__label&quot;&gt;Previous&lt;/span&gt;
+	&lt;ul class=&quot;nav__items&quot;&gt;
+		&lt;li class=&quot;nav__item nav__item--prev&quot;&gt;
+			&lt;a class=&quot;nav__link&quot; href=&quot;#&quot;&gt;
+				&lt;span class=&quot;nav__label&quot;&gt;Previous&lt;/span&gt;
 			&lt;/a&gt;
 		&lt;/li&gt;
-		&lt;li class=&quot;nav-page__item&quot;&gt;&lt;a class=&quot;nav-page__link&quot; href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
-		&lt;li class=&quot;nav-page__item nav-page__item--active&quot;&gt;&lt;a class=&quot;nav-page__link&quot; href=&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
-		&lt;li class=&quot;nav-page__item&quot;&gt;&lt;a class=&quot;nav-page__link&quot; href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
-		&lt;li class=&quot;nav-page__item&quot;&gt;&lt;a class=&quot;nav-page__link&quot; href=&quot;#&quot;&gt;4&lt;/a&gt;&lt;/li&gt;
-		&lt;li class=&quot;nav-page__item&quot;&gt;&lt;a class=&quot;nav-page__link&quot; href=&quot;#&quot;&gt;5&lt;/a&gt;&lt;/li&gt;
-		&lt;li class=&quot;nav-page__item nav-page__item--next&quot;&gt;
-			&lt;a class=&quot;nav-page__link&quot; href=&quot;#&quot;&gt;
-				&lt;span class=&quot;nav-page__label&quot;&gt;Next&lt;/span&gt;
+		&lt;li class=&quot;nav__item&quot;&gt;&lt;a class=&quot;nav__link&quot; href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
+		&lt;li class=&quot;nav__item nav__item--active&quot;&gt;&lt;a class=&quot;nav__link&quot; href=&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
+		&lt;li class=&quot;nav__item&quot;&gt;&lt;a class=&quot;nav__link&quot; href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
+		&lt;li class=&quot;nav__item&quot;&gt;&lt;a class=&quot;nav__link&quot; href=&quot;#&quot;&gt;4&lt;/a&gt;&lt;/li&gt;
+		&lt;li class=&quot;nav__item&quot;&gt;&lt;a class=&quot;nav__link&quot; href=&quot;#&quot;&gt;5&lt;/a&gt;&lt;/li&gt;
+		&lt;li class=&quot;nav__item nav__item--next&quot;&gt;
+			&lt;a class=&quot;nav__link&quot; href=&quot;#&quot;&gt;
+				&lt;span class=&quot;nav__label&quot;&gt;Next&lt;/span&gt;
 			&lt;/a&gt;
 		&lt;/li&gt;
 	&lt;/ul&gt;
@@ -872,14 +872,14 @@
           Example
         </div>
         <div class="kss-modifier__example">
-          <div class="nav-tabs">
+          <div class="nav tab-nav">
 
-  <ul class="nav-tabs__list">
-    <li class="nav-tabs__item"><a class="nav-tabs__link" href="#">Tab one</a></li>
-    <li class="nav-tabs__item nav-tabs__item--active"><a class="nav-tabs__link" href="#">Tab two</a></li>
-    <li class="nav-tabs__item"><a class="nav-tabs__link" href="#">Tab three</a></li>
-    <li class="nav-tabs__item"><a class="nav-tabs__link" href="#">Tab four</a></li>
-    <li class="nav-tabs__item"><a class="nav-tabs__link" href="#">Tab five</a></li>
+  <ul class="nav__items">
+    <li class="nav__item"><a class="nav__link" href="#">Tab one</a></li>
+    <li class="nav__item nav__item--active"><a class="nav__link" href="#">Tab two</a></li>
+    <li class="nav__item"><a class="nav__link" href="#">Tab three</a></li>
+    <li class="nav__item"><a class="nav__link" href="#">Tab four</a></li>
+    <li class="nav__item"><a class="nav__link" href="#">Tab five</a></li>
   </ul>
 
 </div>
@@ -887,14 +887,14 @@
       </div>
 
       <div class="kss-markup kss-style">
-        <pre class="prettyprint lang-html"><code data-language="html">&lt;div class=&quot;nav-tabs&quot;&gt;
+        <pre class="prettyprint lang-html"><code data-language="html">&lt;div class=&quot;nav tab-nav&quot;&gt;
 
-  &lt;ul class=&quot;nav-tabs__list&quot;&gt;
-    &lt;li class=&quot;nav-tabs__item&quot;&gt;&lt;a class=&quot;nav-tabs__link&quot; href=&quot;#&quot;&gt;Tab one&lt;/a&gt;&lt;/li&gt;
-    &lt;li class=&quot;nav-tabs__item nav-tabs__item--active&quot;&gt;&lt;a class=&quot;nav-tabs__link&quot; href=&quot;#&quot;&gt;Tab two&lt;/a&gt;&lt;/li&gt;
-    &lt;li class=&quot;nav-tabs__item&quot;&gt;&lt;a class=&quot;nav-tabs__link&quot; href=&quot;#&quot;&gt;Tab three&lt;/a&gt;&lt;/li&gt;
-    &lt;li class=&quot;nav-tabs__item&quot;&gt;&lt;a class=&quot;nav-tabs__link&quot; href=&quot;#&quot;&gt;Tab four&lt;/a&gt;&lt;/li&gt;
-    &lt;li class=&quot;nav-tabs__item&quot;&gt;&lt;a class=&quot;nav-tabs__link&quot; href=&quot;#&quot;&gt;Tab five&lt;/a&gt;&lt;/li&gt;
+  &lt;ul class=&quot;nav__items&quot;&gt;
+    &lt;li class=&quot;nav__item&quot;&gt;&lt;a class=&quot;nav__link&quot; href=&quot;#&quot;&gt;Tab one&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;nav__item nav__item--active&quot;&gt;&lt;a class=&quot;nav__link&quot; href=&quot;#&quot;&gt;Tab two&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;nav__item&quot;&gt;&lt;a class=&quot;nav__link&quot; href=&quot;#&quot;&gt;Tab three&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;nav__item&quot;&gt;&lt;a class=&quot;nav__link&quot; href=&quot;#&quot;&gt;Tab four&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;nav__item&quot;&gt;&lt;a class=&quot;nav__link&quot; href=&quot;#&quot;&gt;Tab five&lt;/a&gt;&lt;/li&gt;
   &lt;/ul&gt;
 
 &lt;/div&gt;</code></pre>

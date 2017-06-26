@@ -1,0 +1,15 @@
+<div class="field @@if (context.field_modifier) {@@field_modifier}">
+  <label class="field__label" for="@@field_id">@@field_label</label>
+  <div class="field__group">
+    <input
+    	@@if (context.field_type) {placeholder="@@field_placeholder"}
+    	@@if (context.field_value) {value="@@field_value"}
+    	@@if (context.field_id) {id="@@field_id"}
+    	@@if (context.field_type) {type="@@field_type"}
+    	@@if (!context.field_type) {type="text"}
+			@@if (context.field_disabled) {disabled}
+		>
+    @@if (context.field_message) {<p>@@field_message</p>}
+    @@if (context.field_message_error) {<p>@@field_message_error</p>}
+  </div>
+</div>

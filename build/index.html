@@ -74,28 +74,34 @@
 
       <div class="message message--default">
 
-	<p><strong>Component</strong> example (included with gulp-file-include)</p>
+  
+
+  
+
+  
+  <p><strong>Component</strong> example (included with gulp-file-include)</p>
+  
 
 </div>
 
-      <div class="nav-page">
+      <div class="nav page-nav">
 
-	<p class="nav-page__summary">Page <strong>2 of 5</strong></p>
+	<p class="nav__summary">Page <strong>2 of 5</strong></p>
 
-	<ul class="nav-page__list">
-		<li class="nav-page__item nav-page__item--prev">
-			<a class="nav-page__link" href="#">
-				<span class="nav-page__label">Previous</span>
+	<ul class="nav__items">
+		<li class="nav__item nav__item--prev">
+			<a class="nav__link" href="#">
+				<span class="nav__label">Previous</span>
 			</a>
 		</li>
-		<li class="nav-page__item"><a class="nav-page__link" href="#">1</a></li>
-		<li class="nav-page__item nav-page__item--active"><a class="nav-page__link" href="#">2</a></li>
-		<li class="nav-page__item"><a class="nav-page__link" href="#">3</a></li>
-		<li class="nav-page__item"><a class="nav-page__link" href="#">4</a></li>
-		<li class="nav-page__item"><a class="nav-page__link" href="#">5</a></li>
-		<li class="nav-page__item nav-page__item--next">
-			<a class="nav-page__link" href="#">
-				<span class="nav-page__label">Next</span>
+		<li class="nav__item"><a class="nav__link" href="#">1</a></li>
+		<li class="nav__item nav__item--active"><a class="nav__link" href="#">2</a></li>
+		<li class="nav__item"><a class="nav__link" href="#">3</a></li>
+		<li class="nav__item"><a class="nav__link" href="#">4</a></li>
+		<li class="nav__item"><a class="nav__link" href="#">5</a></li>
+		<li class="nav__item nav__item--next">
+			<a class="nav__link" href="#">
+				<span class="nav__label">Next</span>
 			</a>
 		</li>
 	</ul>
@@ -106,7 +112,13 @@
 
       <div class="message message--default">
 
-	<p><strong>Image</strong> example (optimized with gulp-imagemin)</p>
+  
+
+  
+
+  
+  <p><strong>Image</strong> example (optimized with gulp-imagemin)</p>
+  
 
 </div>
 
@@ -114,9 +126,86 @@
 
       <hr>
 
+      <h2>Forms</h2>
+
+      <form action="#">
+        <fieldset>
+
+          <div class="field field--column">
+  <label class="field__label" for="field-name">Name</label>
+  <div class="field__group">
+    <input
+    	
+    	
+    	id="field-name"
+    	
+    	type="text"
+			
+		>
+    
+    
+  </div>
+</div>
+
+          <div class="field field--column">
+  <label class="field__label" for="field-email">E-mail</label>
+  <div class="field__group">
+    <input
+    	
+    	
+    	id="field-email"
+    	
+    	type="text"
+			
+		>
+    
+    
+  </div>
+</div>
+
+          <div class="field">
+            <label class="field__label" for="field-love">Which do you love more?</label>
+            <div class="field__group">
+              <div class="radio is-inline">
+  <input type="radio" id="radio-male" name="radio-group-love"  >
+  <label for="radio-male">Cookies</label>
+</div><div class="radio is-inline">
+  <input type="radio" id="radio-female" name="radio-group-love"  >
+  <label for="radio-female">Choccolate</label>
+</div>
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="field__label" for="field-newsletter">Newsletter</label>
+            <div class="field__group">
+              <div class="checkbox ">
+  <input type="checkbox" id="checkbox-newsletter" >
+  <label for="checkbox-newsletter">Yes</label>
+</div>
+            </div>
+          </div>
+
+          <div class="field field--action">
+            <div class="field__group">
+              <input class="button button--primary" value="Big Button" type="submit">
+            </div>
+          </div>
+
+        </fieldset>
+      </form>
+
+      <hr>
+
       <div class="message message--default">
 
-	<p><strong>Content</strong> example</p>
+  
+
+  
+
+  
+  <p><strong>Content</strong> example</p>
+  
 
 </div>
 

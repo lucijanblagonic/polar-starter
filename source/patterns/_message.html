@@ -1,5 +1,18 @@
-<div class="message @@message-modifier">
+<div class="message @@if (context.message_modifier) {@@message_modifier}">
 
-	<p>@@message-content</p>
+  @@if (context.message_close) {
+    <button class="button close-button">
+      <svg class="icon icon-x"><use xlink:href="../build/assets/images/symbol-defs.svg#icon-x"></use></svg>
+      <span class="label">Close</span>
+    </button>
+  }
+
+  @@if (context.message_title) {
+  <h3 class="message__title">@@message_title</h3>
+  }
+
+  @@if (context.message_content) {
+  <p>@@message_content</p>
+  }
 
 </div>

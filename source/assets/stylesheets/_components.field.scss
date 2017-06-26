@@ -1,0 +1,43 @@
+/* =Form field
+===================================================== */
+
+// Form field
+//
+// Simple form field
+//
+// Markup:
+// <div class="field">
+//   <label class="field__label" for="input-name">Label name</label>
+//   <div class="field__group">
+//     <input type="text" value="Value example" placeholder="Enter value...">
+//   </div>
+// </div>
+//
+// Style guide: 6.field
+
+.field {
+
+  @include clearfix();
+  clear: both;
+
+  margin-bottom: $unit-s;
+
+  @include breakpoint(medium) {
+
+    margin-bottom: $unit-default;
+
+  }
+
+}
+
+.field__label {
+
+  display: block;
+
+  margin-bottom: $unit-xs;
+
+}
+
+.field__group {}
+
+.field--search {}

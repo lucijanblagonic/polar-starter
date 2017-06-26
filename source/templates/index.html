@@ -18,8 +18,8 @@
     <div class="block__container">
 
       @@include('_message.html', {
-        "message-modifier": "message--default",
-        "message-content": "<strong>Component</strong> example (included with gulp-file-include)"
+        "message_modifier": "message--default",
+        "message_content": "<strong>Component</strong> example (included with gulp-file-include)"
       })
 
       @@include('_nav-page.html')
@@ -27,17 +27,81 @@
       <hr>
 
       @@include('_message.html', {
-        "message-modifier": "message--default",
-        "message-content": "<strong>Image</strong> example (optimized with gulp-imagemin)"
+        "message_modifier": "message--default",
+        "message_content": "<strong>Image</strong> example (optimized with gulp-imagemin)"
       })
 
       <img src="../build/assets/images/screenshot-colors.png" alt="Image example">
 
       <hr>
 
+      <h2>Forms</h2>
+
+      <form action="#">
+        <fieldset>
+
+          @@include('_field.html', {
+            "field_modifier": "field--column",
+            "field_id": "field-name",
+            "field_label": "Name",
+            "field_placeholder": ""
+          })
+
+          @@include('_field.html', {
+            "field_modifier": "field--column",
+            "field_id": "field-email",
+            "field_label": "E-mail",
+            "field_placeholder": ""
+          })
+
+          <div class="field">
+            <label class="field__label" for="field-love">Which do you love more?</label>
+            <div class="field__group">
+              @@loop('_radio.html', [
+                {
+                  "radio_modifier": "is-inline",
+                  "radio_checked": "",
+                  "radio_id": "radio-male",
+                  "radio_group": "radio-group-love",
+                  "radio_label": "Cookies"
+                },
+                {
+                  "radio_modifier": "is-inline",
+                  "radio_checked": "",
+                  "radio_id": "radio-female",
+                  "radio_group": "radio-group-love",
+                  "radio_label": "Choccolate"
+                }
+              ])
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="field__label" for="field-newsletter">Newsletter</label>
+            <div class="field__group">
+              @@include('_checkbox.html', {
+                "checkbox_modifier": "",
+                "checkbox_checked": "",
+                "checkbox_id": "checkbox-newsletter",
+                "checkbox_label": "Yes"
+              })
+            </div>
+          </div>
+
+          <div class="field field--action">
+            <div class="field__group">
+              <input class="button button--primary" value="Big Button" type="submit">
+            </div>
+          </div>
+
+        </fieldset>
+      </form>
+
+      <hr>
+
       @@include('_message.html', {
-        "message-modifier": "message--default",
-        "message-content": "<strong>Content</strong> example"
+        "message_modifier": "message--default",
+        "message_content": "<strong>Content</strong> example"
       })
 
       <div class="post">
