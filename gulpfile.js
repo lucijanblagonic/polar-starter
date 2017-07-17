@@ -34,6 +34,12 @@ var critical = require('critical');
 // Requiring rename
 var rename = require('gulp-rename');
 
+// Plumber
+var plumber = require('gulp-plumber');
+
+// Notify
+var notify = require("gulp-notify");
+
 // Requiring gulp-shell
 var shell = require('gulp-shell');
 
@@ -48,6 +54,7 @@ gulp.task('kss', shell.task(
 // Start file include task
 gulp.task('templates', function() {
   gulp.src(['./source/templates/**'])
+    .pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
     .pipe(fileinclude({
       prefix: '@@',
       basepath: './source/patterns'
@@ -70,6 +77,7 @@ gulp.task('browserSync', function() {
 // Start stylesheets task
 gulp.task('stylesheets', function() {
   gulp.src('source/assets/stylesheets/*.scss') // Get all *.scss files
+    .pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
     .pipe(sourcemaps.init()) // Initialize sourcemap plugin
     .pipe(sass().on('error', sass.logError)) // Compiling sass
     .pipe(autoprefixer('last 2 version')) // Adding browser prefixes
@@ -127,7 +135,7 @@ gulp.task('fonts', function() {
 });
 
 // Start watch groups of tasks
-gulp.task('default', ['browserSync', 'templates', 'stylesheets', 'scripts', 'images', 'fonts', 'kss'], function() {
+gulp.task('default', ['browserSync', 'kss', 'templates', 'stylesheets', 'scripts', 'images', 'fonts'], function() {
   gulp.watch('source/assets/stylesheets/**/*.scss', ['stylesheets']); // Watch for SCSS changes
   gulp.watch('source/assets/scripts/**/*.js', ['scripts']); // Watch for JS changes
   gulp.watch('source/assets/images/**/*', ['images']); // Watch for image changes
