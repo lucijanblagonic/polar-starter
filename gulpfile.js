@@ -28,9 +28,6 @@ var cssnano = require('gulp-cssnano');
 // Requiring uglify
 var uglify = require('gulp-uglify');
 
-// Requiring critical
-var critical = require('critical');
-
 // Requiring rename
 var rename = require('gulp-rename');
 
@@ -47,9 +44,12 @@ var shell = require('gulp-shell');
 var kssNode = 'node ' + __dirname + '/node_modules/kss/bin/kss-node ';
 
 // Start KSS (style guide) task
+// gulp.task('kss', shell.task(
+//     [kssNode + '--config source/kss-config.json']
+//   ));
+
 gulp.task('kss', shell.task(
   [kssNode + '--config source/kss-config.json']));
-  // [kssNode + '--xdemo']));
 
 // Start file include task
 gulp.task('templates', function() {
